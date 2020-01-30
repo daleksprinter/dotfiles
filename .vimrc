@@ -13,3 +13,4 @@ set write
 set number
 syntax on
 inoremap <silent> jj <ESC>
+let NERDTreeShowHidden=1
