@@ -10,7 +10,9 @@ call plug#end()
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 
-"emacs keybind
+"keybind
+inoremap <silent> jj <ESC>
+nnoremap O :<C-u>call append(expand('.'), '')<Cr>j
 inoremap <C-d> <Del>
 inoremap <C-h> <BS>
 inoremap <C-a> <home>
@@ -20,22 +22,25 @@ inoremap <C-n> <Down>
 inoremap <C-f> <right>
 inoremap <C-b> <left>
 
-"keybind
-inoremap <silent> jj <ESC>
-nnoremap O :<C-u>call append(expand('.'), '')<Cr>j
+"editor - display
+set cursorline
+set cursorcolumn
+set number
+set showmatch 
 
-"editor
+"editor - search
+set incsearch "incremental search
+set ignorecase
+set smartcase
+set hlsearch "highlight search
+
+"editor - basic
 set mouse=a
 set modifiable
 set write
-set number
 syntax on
 set clipboard=unnamed,autoselect
 set virtualedit=onemore
 set noerrorbells
-set cursorline
-set cursorcolumn
-set incsearch
-set ignorecase
-set smartcase
-set hlsearch
+set backspace=indent,eol,start
+set autoread
