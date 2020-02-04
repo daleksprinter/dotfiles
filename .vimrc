@@ -44,3 +44,4 @@ set virtualedit=onemore
 set noerrorbells
 set backspace=indent,eol,start
 set autoread
+set title
