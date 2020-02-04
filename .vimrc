@@ -13,6 +13,8 @@ let NERDTreeShowHidden=1
 "keybind
 inoremap <silent> jj <ESC>
 nnoremap O :<C-u>call append(expand('.'), '')<Cr>j
+
+"keybind - emacs
 inoremap <C-d> <Del>
 inoremap <C-h> <BS>
 inoremap <C-a> <home>
@@ -22,11 +24,21 @@ inoremap <C-n> <Down>
 inoremap <C-f> <right>
 inoremap <C-b> <left>
 
+"keybind - cursormove
+nnoremap <C-j> }
+nnoremap <C-k> {
+nnoremap j gj
+nnoremap k gk
+nnoremap <down> gj
+nnoremap <up> gk
+set whichwrap=b,s,h,l,<,>,[,]
+
 "editor - display
 set cursorline
 set cursorcolumn
 set number
 set showmatch 
+set laststatus=2
 
 "editor - search
 set incsearch "incremental search
@@ -44,4 +56,5 @@ set virtualedit=onemore
 set noerrorbells
 set backspace=indent,eol,start
 set autoread
+set smartindent
 set title
