@@ -37,7 +37,6 @@ set whichwrap=b,s,h,l,<,>,[,]
 
 "editor - display
 set cursorline
-set cursorcolumn
 set number
 set showmatch 
 set laststatus=2
