@@ -6,6 +6,9 @@ alias repos='ghq list -p | peco'
 alias repo='cd (repos)'
 alias history='history | peco'
 
+alias ll 'ls -la'
+alias ... '../../'
+
 rbenv init - | source
 set -x PATH $HOME/.rbenv/bin $PATH
 set -x PATH /usr/local/opt/mysql-client/bin $PATH

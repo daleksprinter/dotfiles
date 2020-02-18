@@ -6,6 +6,7 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'cormacrelf/vim-colors-github'
 call plug#end()
 
 "NREDTree
@@ -63,3 +64,6 @@ set title
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+
+"editor - theme
+colorscheme slate
