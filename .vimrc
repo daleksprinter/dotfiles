@@ -7,6 +7,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'cormacrelf/vim-colors-github'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 "NREDTree
@@ -16,6 +18,7 @@ let NERDTreeShowHidden=1
 "keybind
 inoremap <silent> jj <ESC>
 nnoremap O :<C-u>call append(expand('.'), '')<Cr>j
+nnoremap f :Files
 
 "keybind - emacs
 inoremap <C-d> <Del>
