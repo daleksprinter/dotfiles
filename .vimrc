@@ -18,7 +18,13 @@ let NERDTreeShowHidden=1
 "keybind
 inoremap <silent> jj <ESC>
 nnoremap O :<C-u>call append(expand('.'), '')<Cr>j
-nnoremap f :Files
+nnoremap f :Files<CR>
+
+map <S-k> <Nop>
+"keybind - tab move
+nnoremap J gT
+nnoremap K gt
+
 
 "keybind - emacs
 inoremap <C-d> <Del>
