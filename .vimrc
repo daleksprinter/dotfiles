@@ -9,6 +9,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'cormacrelf/vim-colors-github'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'othree/yajs.vim'
+Plug 'maxmellon/vim-jsx-pretty'
+
 call plug#end()
 
 "NREDTree
