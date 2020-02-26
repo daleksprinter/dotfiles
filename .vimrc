@@ -11,7 +11,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'othree/yajs.vim'
 Plug 'maxmellon/vim-jsx-pretty'
-
+Plug 'Shougo/neocomplete.vim'
 call plug#end()
 
 "NREDTree
