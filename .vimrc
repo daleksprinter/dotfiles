@@ -79,3 +79,5 @@ endif
 
 "editor - theme
 colorscheme slate
+
+set noswapfile
