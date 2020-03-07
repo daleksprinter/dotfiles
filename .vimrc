@@ -81,3 +81,13 @@ endif
 colorscheme slate
 
 set noswapfile
+
+"editor - tab setting
+set tabstop=4
+set shiftwidth=4
+
+"undo永続化
+if has('persistent_undo')
+	set undodir=~/.vim/undo
+	set undofile
+endif
