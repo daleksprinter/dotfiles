@@ -9,6 +9,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'othree/yajs.vim'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'Shougo/neocomplete.vim'
+Plug 'alvan/vim-closetag'
 call plug#end()
 
 "NREDTree
@@ -102,3 +103,7 @@ inoremap <expr><C-n> pumvisible() ? "<Down>" : "<C-n>"
 inoremap <expr><C-p> pumvisible() ? "<Up>" : "<C-p>"
 
 let g:neocomplete#enable_at_startup = 1
+
+
+
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.js"
