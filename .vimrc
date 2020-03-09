@@ -6,9 +6,6 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'cormacrelf/vim-colors-github'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
 Plug 'othree/yajs.vim'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'Shougo/neocomplete.vim'
@@ -21,7 +18,6 @@ let NERDTreeShowHidden=1
 "keybind
 inoremap <silent> jj <ESC>
 nnoremap O :<C-u>call append(expand('.'), '')<Cr>j
-nnoremap f :Files<CR>
 
 map <S-k> <Nop>
 "keybind - tab move
@@ -59,7 +55,7 @@ set incsearch "incremental search
 set ignorecase
 set smartcase
 set hlsearch "highlight search
-
+nmap <Esc><Esc> :nohlsearch<CR><Esc>
 "editor - basic
 set mouse=a
 set modifiable
@@ -72,7 +68,9 @@ set backspace=indent,eol,start
 set autoread
 set smartindent
 set title
-"move to line last edited when vim initialized
+
+
+"ファイル開いた時に最後に編集した行に移動
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
@@ -95,3 +93,11 @@ endif
 let g:go_fmt_command = "goimports"
 let g:go_metalinter_autosave = 1
 let g:go_metalinter_autosave_enabled = ['vet']
+
+" 補完表示時のEnterで改行をしない
+inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
+
+set completeopt=menuone,noinsert
+inoremap <expr><C-n> pumvisible() ? "<Down>" : "<C-n>"
+inoremap <expr><C-p> pumvisible() ? "<Up>" : "<C-p>"
+
