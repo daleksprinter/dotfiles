@@ -4,10 +4,11 @@ set -x PATH $PATH $GOPATH/bin
 alias rm 'rmtrash'
 alias repos='ghq list -p | peco'
 alias repo='cd (repos)'
-alias history='history | peco'
+alias hs='history | peco'
 
 alias ll 'ls -la'
-alias ... '../../'
+alias br='git branch  | peco | xargs git checkout'
+
 
 rbenv init - | source
 set -x PATH $HOME/.rbenv/bin $PATH
