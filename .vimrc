@@ -129,3 +129,4 @@ set encoding=utf-8
 let g:brightest#highlight = {
 \   "group" : "BrightestUnderline"
 \}
+set breakindent
