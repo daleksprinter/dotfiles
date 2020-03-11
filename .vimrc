@@ -15,7 +15,6 @@ call plug#end()
 "NREDTree
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
-
 "keybind
 inoremap <silent> jj <ESC>
 nnoremap O :<C-u>call append(expand('.'), '')<Cr>j
@@ -121,3 +120,7 @@ let g:neocomplete#enable_at_startup = 1
 
 
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.js"
+
+"xでヤンクしない
+nnoremap x "_x"
+set encoding=utf-8
