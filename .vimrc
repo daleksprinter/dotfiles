@@ -19,12 +19,26 @@ let NERDTreeShowHidden=1
 "keybind
 inoremap <silent> jj <ESC>
 nnoremap O :<C-u>call append(expand('.'), '')<Cr>j
+nnoremap a 0
+nnoremap f $
 
+nnoremap ; :
+nnoremap : ;
+inoremap <silent> jj <ESC>
 map <S-k> <Nop>
 "keybind - tab move
 nnoremap J gT
 nnoremap K gt
 
+set scrolloff=5
+
+"検索行が真ん中に来るようにする
+nmap n nzz 
+nmap N Nzz 
+nmap * *zz 
+nmap # #zz 
+nmap g* g*zz 
+nmap g# g#zz
 
 "keybind - emacs
 inoremap <C-d> <Del>
