@@ -10,6 +10,7 @@ Plug 'othree/yajs.vim'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'Shougo/neocomplete.vim'
 Plug 'alvan/vim-closetag'
+Plug 'osyo-manga/vim-brightest'
 call plug#end()
 
 "NREDTree
@@ -124,3 +125,7 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.js"
 "xでヤンクしない
 nnoremap x "_x"
 set encoding=utf-8
+
+let g:brightest#highlight = {
+\   "group" : "BrightestUnderline"
+\}
