@@ -15,3 +15,4 @@ set -x PATH $HOME/.rbenv/bin $PATH
 set -x PATH /usr/local/opt/mysql-client/bin $PATH
 set -x PATH $HOME/.nodebrew/current/bin $PATH
 
+alias dc='docker-compose'
