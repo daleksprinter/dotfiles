@@ -18,6 +18,7 @@ nnoremap <silent><C-e> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 "keybind
 inoremap <silent> jj <ESC>
+inoremap <silent> っj <ESC>
 nnoremap O :<C-u>call append(expand('.'), '')<Cr>j
 nnoremap a 0
 nnoremap f $
@@ -130,3 +131,11 @@ let g:brightest#highlight = {
 \   "group" : "BrightestUnderline"
 \}
 set breakindent
+if has('mac')
+    augroup insertLeave
+        autocmd!
+        autocmd InsertLeave * :call job_start(
+                    \ ['osascript', '-e', 'tell application "System Events" to key code {102}'],
+                    \ {'in_io': 'null', 'out_io': 'null', 'err_io': 'null'})
+    augroup END
+endif
