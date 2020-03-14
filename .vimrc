@@ -123,8 +123,6 @@ let g:neocomplete#enable_at_startup = 1
 
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.js"
 
-"xでヤンクしない
-nnoremap x "_x"
 set encoding=utf-8
 
 let g:brightest#highlight = {
