@@ -137,3 +137,5 @@ if has('mac')
                     \ {'in_io': 'null', 'out_io': 'null', 'err_io': 'null'})
     augroup END
 endif
+
+set ttimeoutlen=10

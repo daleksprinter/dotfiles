@@ -17,4 +17,4 @@ set -x PATH $HOME/.nodebrew/current/bin $PATH
 
 alias dc='docker-compose'
 
-source $PWD/.functions/func.fish
+set -x PATH $PATH /usr/local/opt/binutils/bin
