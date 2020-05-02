@@ -114,8 +114,9 @@ let g:go_metalinter_autosave_enabled = ['vet']
 inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
 
 set completeopt=menuone,noinsert
-inoremap <expr><C-n> pumvisible() ? "<Down>" : "<C-n>"
-inoremap <expr><C-p> pumvisible() ? "<Up>" : "<C-p>"
+"inoremap <expr><C-n> pumvisible() ? "<Down>" : "<C-n>"
+"inoremap <expr><C-p> pumvisible() ? "<Up>" : "<C-p>"
+
 
 let g:neocomplete#enable_at_startup = 1
 
@@ -139,3 +140,4 @@ if has('mac')
 endif
 
 set ttimeoutlen=10
+
