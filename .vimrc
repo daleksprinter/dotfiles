@@ -11,6 +11,7 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'Shougo/neocomplete.vim'
 Plug 'alvan/vim-closetag'
 Plug 'osyo-manga/vim-brightest'
+Plug 'Yggdroot/indentLine'
 call plug#end()
 
 "NREDTree
@@ -141,3 +142,17 @@ endif
 
 set ttimeoutlen=10
 
+
+let g:indentLine_enabled = 1
+let g:indentLine_color_term = 111
+let g:indentLine_color_gui = '#708090'
+let g:indentLine_char = '¦'  "use ¦, ┆ or │
+
+
+filetype plugin indent on
+
+augroup fileTypeIndent
+    autocmd!
+    autocmd BufNewFile,BufRead *.tsx setlocal tabstop=2 softtabstop=2 shiftwidth=2
+    autocmd BufNewFile,BufRead *.js setlocal tabstop=2 softtabstop=2 shiftwidth=2
+augroup END
