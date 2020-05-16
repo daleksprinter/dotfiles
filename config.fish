@@ -18,3 +18,7 @@ set -x PATH $HOME/.nodebrew/current/bin $PATH
 alias dc='docker-compose'
 
 set -x PATH $PATH /usr/local/opt/binutils/bin
+
+
+set -x PATH $PATH /Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/bin
+set -x JAVA_HOME /Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home

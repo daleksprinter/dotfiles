@@ -11,12 +11,28 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'Shougo/neocomplete.vim'
 Plug 'alvan/vim-closetag'
 Plug 'osyo-manga/vim-brightest'
+
+Plug 'prettier/vim-prettier'
+Plug 'dense-analysis/ale'
 Plug 'Yggdroot/indentLine'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+
+Plug 'sheerun/vim-polyglot'
+Plug 'tomtom/tcomment_vim'
+Plug 'tpope/vim-surround'
+Plug 'nathanaelkane/vim-indent-guides'
 call plug#end()
+
+
+let g:indent_guides_enable_on_vim_startup = 1
 
 "NREDTree
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
+let g:NERDTreeMapUpdir='<C-u>'
+let g:NERDTreeQuitOnOpen=1
+
 "keybind
 inoremap <silent> jj <ESC>
 inoremap <silent> っj <ESC>
@@ -141,13 +157,6 @@ if has('mac')
 endif
 
 set ttimeoutlen=10
-
-
-let g:indentLine_enabled = 1
-let g:indentLine_color_term = 111
-let g:indentLine_color_gui = '#708090'
-let g:indentLine_char = '¦'  "use ¦, ┆ or │
-
 
 filetype plugin indent on
 
