@@ -86,8 +86,8 @@ inoremap <C-f> <right>
 inoremap <C-b> <left>
 
 "keybind - cursormove
-nnoremap <C-j> }
-nnoremap <C-k> {
+noremap <C-j> }
+noremap <c-k> {
 nnoremap j gj
 nnoremap k gk
 nnoremap <down> gj
@@ -105,7 +105,7 @@ set incsearch "incremental search
 set ignorecase
 set smartcase
 set hlsearch "highlight search
-nmap <Esc><Esc> :nohlsearch<CR><Esc>
+nmap <esc><esc> :nohlsearch<cr><esc>
 "editor - basic
 set mouse=a
 set modifiable
@@ -148,8 +148,8 @@ let g:go_metalinter_autosave_enabled = ['vet']
 inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
 
 set completeopt=menuone,noinsert
-"inoremap <expr><C-n> pumvisible() ? "<Down>" : "<C-n>"
-"inoremap <expr><C-p> pumvisible() ? "<Up>" : "<C-p>"
+"inoremap <expr><c-n> pumvisible() ? "<down>" : "<c-n>"
+"inoremap <expr><c-p> pumvisible() ? "<up>" : "<c-p>"
 
 
 let g:neocomplete#enable_at_startup = 1
