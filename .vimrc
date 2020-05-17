@@ -48,11 +48,7 @@ let g:NERDTreeMapUpdir='<C-u>'
 let g:NERDTreeQuitOnOpen=1
 
 "keybind
-inoremap <silent> jj <ESC>
-inoremap <silent> っj <ESC>
 nnoremap O :<C-u>call append(expand('.'), '')<Cr>j
-nnoremap a 0
-nnoremap f $
 
 nnoremap ; :
 nnoremap : ;
