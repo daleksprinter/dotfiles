@@ -14,18 +14,32 @@ Plug 'osyo-manga/vim-brightest'
 
 Plug 'prettier/vim-prettier'
 Plug 'dense-analysis/ale'
-Plug 'Yggdroot/indentLine'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-
 Plug 'sheerun/vim-polyglot'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-surround'
 Plug 'nathanaelkane/vim-indent-guides'
+
+
+
 call plug#end()
 
-
+"vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
+" ガイドをスタートするインデントの量
+"let g:indent_guides_start_level=2
+" 自動カラーを無効にする
+let g:indent_guides_auto_colors=0
+" 奇数インデントのカラー
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#262626 ctermbg=gray
+" 偶数インデントのカラー
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#3c3c3c ctermbg=darkgray
+" ハイライト色の変化の幅
+"let g:indent_guides_color_change_percent = 30
+" ガイドの幅
+"let g:indent_guides_guide_size = 1
+
 
 "NREDTree
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
@@ -44,6 +58,9 @@ nnoremap ; :
 nnoremap : ;
 inoremap <silent> jj <ESC>
 map <S-k> <Nop>
+
+noremap a 0
+noremap f $
 "keybind - tab move
 nnoremap J gT
 nnoremap K gt
@@ -160,6 +177,8 @@ set ttimeoutlen=10
 
 filetype plugin indent on
 
+
+"言語ごとのインデント幅の調整
 augroup fileTypeIndent
     autocmd!
     autocmd BufNewFile,BufRead *.tsx setlocal tabstop=2 softtabstop=2 shiftwidth=2
