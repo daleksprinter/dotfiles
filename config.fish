@@ -9,7 +9,7 @@ alias hs='history | peco'
 alias ll 'ls -la'
 alias br='git branch  | peco | xargs git checkout'
 
-
+set -U FZF_LEGACY_KEYBINDINGS 0
 rbenv init - | source
 set -x PATH $HOME/.rbenv/bin $PATH
 set -x PATH /usr/local/opt/mysql-client/bin $PATH

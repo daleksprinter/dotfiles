@@ -52,11 +52,10 @@ nnoremap O :<C-u>call append(expand('.'), '')<Cr>j
 
 nnoremap ; :
 nnoremap : ;
-inoremap <silent> jj <ESC>
 map <S-k> <Nop>
 
 noremap a 0
-noremap f $
+noremap f $l
 "keybind - tab move
 nnoremap J gT
 nnoremap K gt
@@ -108,13 +107,12 @@ set modifiable
 set write
 syntax on
 set clipboard=unnamed,autoselect
-set virtualedit=onemore
 set noerrorbells
 set backspace=indent,eol,start
 set autoread
 set smartindent
 set title
-
+set virtualedit+=onemore
 
 "ファイル開いた時に最後に編集した行に移動
 if has("autocmd")
