@@ -12,6 +12,8 @@ set -x PATH $HOME/.rbenv/bin $PATH
 set -x PATH /usr/local/opt/mysql-client/bin $PATH
 set -x PATH $HOME/.nodebrew/current/bin $PATH
 
+source ~/.functions/func.fish
+
 alias dc='docker-compose'
 
 set -x PATH $PATH /usr/local/opt/binutils/bin
