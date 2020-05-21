@@ -10,5 +10,6 @@ end
 function repo
 	set len (ghq root | wc -c | sed 's/ //g')
 	set dir (ghq list -p | cut -c $len- | fzf --preview 'ls -a {}')
+	[ -z $dir ] && return
 	cd (ghq root)$dir
 end

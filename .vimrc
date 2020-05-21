@@ -41,6 +41,10 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#3c3c3c ctermbg=darkgr
 " ガイドの幅
 "let g:indent_guides_guide_size = 1
 
+let mapleader = ";"
+
+"fzf.vim
+nnoremap <leader>fv :Files<CR>
 
 "NREDTree
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
