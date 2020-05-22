@@ -13,3 +13,8 @@ function repo
 	[ -z $dir ] && return
 	cd (ghq root)$dir
 end
+
+function cd
+  builtin cd $argv
+  ls -a
+end
