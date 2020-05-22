@@ -22,9 +22,10 @@ Plug 'tpope/vim-surround'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'junegunn/fzf', {'do': { -> fzf#install() }}
 Plug 'junegunn/fzf.vim'
-
-
+Plug 'arcticicestudio/nord-vim'
+Plug 'itchyny/lightline.vim'
 call plug#end()
+colorscheme nord
 
 "vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
@@ -41,10 +42,6 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#3c3c3c ctermbg=darkgr
 " ガイドの幅
 "let g:indent_guides_guide_size = 1
 
-let mapleader = ";"
-
-"fzf.vim
-nnoremap <leader>fv :Files<CR>
 
 "NREDTree
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
@@ -125,7 +122,6 @@ if has("autocmd")
 endif
 
 "editor - theme
-colorscheme slate
 
 set noswapfile
 
