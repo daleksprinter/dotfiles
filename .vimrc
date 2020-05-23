@@ -4,8 +4,8 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'jiangmiao/auto-pairs'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+ Plug 'vim-airline/vim-airline'
+ Plug 'vim-airline/vim-airline-themes'
 Plug 'othree/yajs.vim'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'Shougo/neocomplete.vim'
@@ -24,9 +24,9 @@ Plug 'junegunn/fzf', {'do': { -> fzf#install() }}
 Plug 'junegunn/fzf.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'itchyny/lightline.vim'
+Plug 'dag/vim-fish'
 call plug#end()
 colorscheme nord
-
 "vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
 " ガイドをスタートするインデントの量
@@ -41,6 +41,7 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#3c3c3c ctermbg=darkgr
 "let g:indent_guides_color_change_percent = 30
 " ガイドの幅
 "let g:indent_guides_guide_size = 1
+
 
 
 "NREDTree
