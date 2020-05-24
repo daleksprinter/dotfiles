@@ -1,28 +1,44 @@
 "plugin
 call plug#begin()
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+"filer
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
+Plug 'junegunn/fzf', {'do': { -> fzf#install() }}
+Plug 'junegunn/fzf.vim'
+
+"git plugin
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+
+"linter, syntax checker
+Plug 'dense-analysis/ale'
+Plug 'sheerun/vim-polyglot'
+
+"basics
 Plug 'jiangmiao/auto-pairs'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'othree/yajs.vim'
-Plug 'maxmellon/vim-jsx-pretty'
+Plug 'tomtom/tcomment_vim'
 Plug 'Shougo/neocomplete.vim'
 Plug 'alvan/vim-closetag'
 Plug 'osyo-manga/vim-brightest'
-Plug 'prettier/vim-prettier'
-Plug 'dense-analysis/ale'
-Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
-Plug 'sheerun/vim-polyglot'
-Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-surround'
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'junegunn/fzf', {'do': { -> fzf#install() }}
-Plug 'junegunn/fzf.vim'
-Plug 'arcticicestudio/nord-vim'
+Plug 'vim-airline/vim-airline'
 Plug 'itchyny/lightline.vim'
+
+"theme
+Plug 'arcticicestudio/nord-vim'
+
+
+"language support
+"javascript
+Plug 'othree/yajs.vim'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'prettier/vim-prettier'
+
+"golang
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+"fish
 Plug 'dag/vim-fish'
 call plug#end()
 
@@ -121,7 +137,6 @@ set virtualedit+=onemore
 set noswapfile
 set ttimeoutlen=10
 set completeopt=menuone,noinsert
-
 "ファイル開いた時に最後に編集した行に移動
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
