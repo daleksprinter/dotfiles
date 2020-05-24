@@ -23,7 +23,6 @@ Plug 'osyo-manga/vim-brightest'
 Plug 'tpope/vim-surround'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'vim-airline/vim-airline'
-Plug 'itchyny/lightline.vim'
 
 "theme
 Plug 'arcticicestudio/nord-vim'
