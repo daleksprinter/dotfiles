@@ -4,14 +4,13 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'jiangmiao/auto-pairs'
- Plug 'vim-airline/vim-airline'
- Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'othree/yajs.vim'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'Shougo/neocomplete.vim'
 Plug 'alvan/vim-closetag'
 Plug 'osyo-manga/vim-brightest'
-
 Plug 'prettier/vim-prettier'
 Plug 'dense-analysis/ale'
 Plug 'tpope/vim-fugitive'
@@ -26,7 +25,10 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'dag/vim-fish'
 call plug#end()
+
+"theme
 colorscheme nord
+
 "vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
 " ガイドをスタートするインデントの量
@@ -59,11 +61,11 @@ map <S-k> <Nop>
 
 noremap a 0
 noremap f $l
-"keybind - tab move
+
 nnoremap J gT
 nnoremap K gt
-
 set scrolloff=5
+
 
 "検索行が真ん中に来るようにする
 nmap n nzz 
@@ -116,15 +118,15 @@ set autoread
 set smartindent
 set title
 set virtualedit+=onemore
+set noswapfile
+set ttimeoutlen=10
+set completeopt=menuone,noinsert
 
 "ファイル開いた時に最後に編集した行に移動
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
-"editor - theme
-
-set noswapfile
 
 "editor - tab setting
 set tabstop=4
@@ -136,16 +138,9 @@ if has('persistent_undo')
 	set undofile
 endif
 
-let g:go_fmt_command = "goimports"
-let g:go_metalinter_autosave = 1
-let g:go_metalinter_autosave_enabled = ['vet']
-
 " 補完表示時のEnterで改行をしない
 inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
 
-set completeopt=menuone,noinsert
-"inoremap <expr><c-n> pumvisible() ? "<down>" : "<c-n>"
-"inoremap <expr><c-p> pumvisible() ? "<up>" : "<c-p>"
 
 
 let g:neocomplete#enable_at_startup = 1
@@ -169,7 +164,6 @@ if has('mac')
     augroup END
 endif
 
-set ttimeoutlen=10
 
 filetype plugin indent on
 
@@ -193,3 +187,7 @@ let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
 let g:go_highlight_function_calls = 1
 let g:go_highlight_extra_types = 1
+let g:go_metalinter_autosave = 1
+let g:go_metalinter_autosave_enabled = ['vet']
+
+
