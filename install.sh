@@ -3,6 +3,7 @@
 # symbolic link
 ln -sfv $PWD/.vimrc $HOME/.vimrc
 ln -sfv $PWD/.tmux.conf $HOME/.tmux.conf 
+ln -sfv $PWD/.tigrc $HOME/.tigrc
 
 ln -sfnv $PWD/.vim $HOME/.vim
 ln -sfnv $PWD/.config $HOME/.config

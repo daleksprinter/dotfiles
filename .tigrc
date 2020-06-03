@@ -1,0 +1,13 @@
+set diff-highlight = true
+set diff-options = -m --first-parent
+set tab-size = 2
+set ignore-case = true
+set refresh-mode = auto
+
+set main-view = id:false \
+                author:abbreviated \
+                date:relative-compact \
+                commit-title:graph=true,refs=true,overflow=true
+
+bind status C !git commit -v
+bind main C !git sw -d %(commit)
