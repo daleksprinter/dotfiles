@@ -18,3 +18,12 @@ function cd
   builtin cd $argv
   ls -a
 end
+
+function comp
+	if test -z $argv[2]
+		g++ -std=gnu++1y $argv[1]
+	else
+		echo $argv[2]
+		g++ -std=gnu++1y $argv[1] -o $argv[2]
+	end
+end
