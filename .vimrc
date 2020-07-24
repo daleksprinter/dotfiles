@@ -25,6 +25,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'majutsushi/tagbar'
 
 Plug 'simeji/winresizer'
+Plug 'easymotion/vim-easymotion'
 "
 " Plug 'Shougo/neocomplcache.vim'
 "
