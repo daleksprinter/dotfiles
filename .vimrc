@@ -243,7 +243,7 @@ let g:asyncomplete_log_file = expand('~/asyncomplete.log')
 
 
 
-let g:lsp_diagnostics_enabled = 1
+let g:lsp_diagnostics_enabled = 0
 let g:lsp_diagnostics_echo_cursor = 1
 let g:asyncomplete_auto_popup = 1
 let g:asyncomplete_auto_completeopt = 0
@@ -269,3 +269,5 @@ let g:lsp_settings['gopls'] = {
 			\  },
 			\}
 "
+
+let g:winresizer_start_key = '<C-i>'
