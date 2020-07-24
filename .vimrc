@@ -23,6 +23,8 @@ Plug 'tpope/vim-surround'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'vim-airline/vim-airline'
 Plug 'majutsushi/tagbar'
+
+Plug 'simeji/winresizer'
 "
 " Plug 'Shougo/neocomplcache.vim'
 "
