@@ -17,34 +17,42 @@ Plug 'airblade/vim-gitgutter'
 "basics
 Plug 'jiangmiao/auto-pairs'
 Plug 'tomtom/tcomment_vim'
-Plug 'Shougo/neocomplete.vim'
 Plug 'alvan/vim-closetag'
 Plug 'osyo-manga/vim-brightest'
 Plug 'tpope/vim-surround'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'vim-airline/vim-airline'
 Plug 'majutsushi/tagbar'
-
-Plug 'Shougo/neocomplcache.vim'
-
-Plug 'Shougo/neosnippet'
-Plug 'Shougo/neosnippet-snippets'
-
+"
+" Plug 'Shougo/neocomplcache.vim'
+"
+" Plug 'Shougo/neosnippet'
+" Plug 'Shougo/neosnippet-snippets'
+"
 "theme
 Plug 'arcticicestudio/nord-vim'
 
 
-"language support
-"javascript
-Plug 'othree/yajs.vim'
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'prettier/vim-prettier'
+" "language support
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'mattn/vim-lsp-settings'
+Plug 'mattn/vim-goimports'
 
-"golang
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
-"fish
-Plug 'dag/vim-fish'
+
+" "javascript
+" Plug 'othree/yajs.vim'
+" Plug 'maxmellon/vim-jsx-pretty'
+" Plug 'prettier/vim-prettier'
+"
+" "golang
+" Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+"
+" "fish
+" Plug 'dag/vim-fish'
 call plug#end()
 
 "theme
@@ -163,9 +171,6 @@ inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
 
 
 
-let g:neocomplete#enable_at_startup = 1
-
-
 
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.js"
 
@@ -195,44 +200,69 @@ augroup fileTypeIndent
     autocmd BufNewFile,BufRead *.js setlocal tabstop=2 softtabstop=2 shiftwidth=2
 augroup END
 
-" ## vim-go
-let g:go_fmt_command = "goimports"
-let g:go_hightlight_functions = 1
-let g:go_hightlight_methods = 1
-let g:go_hightlight_structs = 1
-let g:go_hightlight_interfaces = 1
-let g:go_hightlight_operators = 1
-let g:go_hightlight_build_constraints = 1
-let g:go_highlight_types = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_function_calls = 1
-let g:go_highlight_extra_types = 1
-
 nnoremap  <silent><C-t> :TagbarToggle<CR>
 
 let g:Tlist_Ctags_Cmd='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 
 
-let g:neosnippet#snippets_directory='~/.vim/bundle/neosnippet-snippets/snippets/'
+let mapleader = "\<Space>"
+
+
+function! s:on_lsp_buffer_enabled() abort
+    setlocal omnifunc=lsp#complete
+
+    setlocal signcolumn=yes
+    if exists('+tagfunc') | setlocal tagfunc=lsp#tagfunc | endif
+    nmap <buffer> gd <plug>(lsp-definition)
+    nmap <buffer> gr <plug>(lsp-references)
+    nmap <buffer> gi <plug>(lsp-implementation)
+    nmap <buffer> gt <plug>(lsp-type-definition)
+    nmap <buffer> <leader>rn <plug>(lsp-rename)
+    nmap <buffer> [g <Plug>(lsp-previous-diagnostic)
+    nmap <buffer> ]g <Plug>(lsp-next-diagnostic)
+    nmap <buffer> K <plug>(lsp-hover)
+endfunction
+
+augroup lsp_install
+    au!
+    " call s:on_lsp_buffer_enabled only for languages that has the server registered.
+    autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
+augroup END
+
+let g:lsp_log_verbose = 1
+let g:lsp_log_file = expand('~/vim-lsp.log')
+
+" for asyncomplete.vim log
+let g:asyncomplete_log_file = expand('~/asyncomplete.log')
 
 
 
-let g:deoplete#enable_at_startup = 1
 
-" Plugin key-mappings.
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-k>     <Plug>(neosnippet_expand_target)
 
-" SuperTab like snippets behavior.
-"imap <expr><TAB>
-" \ pumvisible() ? "\<C-n>" :
-" \ neosnippet#expandable_or_jumpable() ?
-" \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 
-" For conceal markers.
-if has('conceal')
-  set conceallevel=2 concealcursor=niv
-endif
+let g:lsp_diagnostics_enabled = 1
+let g:lsp_diagnostics_echo_cursor = 1
+let g:asyncomplete_auto_popup = 1
+let g:asyncomplete_auto_completeopt = 0
+let g:asyncomplete_popup_delay = 200
+let g:lsp_text_edit_enabled = 1
+let g:lsp_preview_float = 1
+let g:lsp_diagnostics_float_cursor = 1
+let g:lsp_settings_filetype_go = ['gopls', 'golangci-lint-langserver']
+
+let g:lsp_settings = {}
+let g:lsp_settings['gopls'] = {
+			\  'workspace_config': {
+			\    'usePlaceholders': v:true,
+			\    'analyses': {
+			\      'fillstruct': v:true,
+			\    },
+			\  },
+			\  'initialization_options': {
+			\    'usePlaceholders': v:true,
+			\    'analyses': {
+			\      'fillstruct': v:true,
+			\    },
+			\  },
+			\}
+"
