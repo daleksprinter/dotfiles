@@ -17,7 +17,7 @@ set -x PATH $HOME/.nodebrew/current/bin $PATH
 source ~/.functions/func.fish
 
 alias dc='docker-compose'
-
+set -x GO111MODULE on
 set -x PATH $PATH /usr/local/opt/binutils/bin
 
 
