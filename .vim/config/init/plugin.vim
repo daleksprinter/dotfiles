@@ -1,4 +1,3 @@
-"plugin
 call plug#begin()
 "filer
 Plug 'scrooloose/nerdtree'
@@ -23,12 +22,10 @@ Plug 'tpope/vim-surround'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'vim-airline/vim-airline'
 Plug 'majutsushi/tagbar'
-
 Plug 'simeji/winresizer'
 Plug 'easymotion/vim-easymotion'
 "
 " Plug 'Shougo/neocomplcache.vim'
-"
 " Plug 'Shougo/neosnippet'
 " Plug 'Shougo/neosnippet-snippets'
 "
@@ -36,7 +33,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'arcticicestudio/nord-vim'
 
 
-" "language support
+"language support
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'prabirshrestha/asyncomplete.vim'
@@ -45,14 +42,12 @@ Plug 'mattn/vim-lsp-settings'
 
 
 Plug 'mattn/vim-goimports'
-
 Plug 'maxmellon/vim-jsx-pretty'
 
 
 
 " "javascript
 " Plug 'othree/yajs.vim'
-" Plug 'maxmellon/vim-jsx-pretty'
 " Plug 'prettier/vim-prettier'
 "
 " "golang
