@@ -47,10 +47,11 @@ nnoremap sl <C-w>l
 nnoremap sh <C-w>h
 nnoremap ss :<C-u>sp<CR><C-w>j
 nnoremap sv :<C-u>vs<CR><C-w>l
+nnoremap sm :call ToggleWindowSize()<CR>
 
 "tab move
 nnoremap    [Tag]   <Nop>
-nmap   t [Tag]
+nmap   s [Tag]
 for n in range(1, 9)
 	execute 'nnoremap <silent> [Tag]'.n  ':<C-u>tabnext'.n.'<CR>'
 endfor
