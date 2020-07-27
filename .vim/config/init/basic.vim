@@ -12,23 +12,28 @@ set smartcase
 set hlsearch "highlight search
 "editor - basic
 set mouse=a
-set modifiable
-set write
 syntax on
 set clipboard=unnamed,autoselect
 set noerrorbells
 set backspace=indent,eol,start
-set autoread
-set smartindent
 set title
 set virtualedit+=onemore
-set noswapfile
 set ttimeoutlen=10
 set completeopt=menuone,noinsert
 
+"indent settings
+set breakindent
+set smartindent
+
+"file settings
+set autoread
+set modifiable
+set write
+set noswapfile
+
 set whichwrap=b,s,h,l,<,>,[,]
 
-set breakindent
+
 "editor - tab setting
 set tabstop=4
 set shiftwidth=4
