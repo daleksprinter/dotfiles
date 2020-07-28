@@ -6,7 +6,9 @@ nnoremap ; :
 nnoremap : ;
 map <S-k> <Nop>
 
-noremap a 0
+nnoremap Y y$
+
+noremap a ^
 noremap f $l
 
 nnoremap J gT
@@ -14,7 +16,7 @@ nnoremap K gt
 
 "検索行が真ん中に来るようにする
 nmap n nzz 
-nmap N Nzz 
+nnoremap N Nzzzv
 nmap * *zz 
 nmap # #zz 
 nmap g* g*zz 
@@ -29,6 +31,7 @@ inoremap <C-p> <Up>
 inoremap <C-n> <Down>
 inoremap <C-f> <right>
 inoremap <C-b> <left>
+inoremap <C-k> <Esc>lc$
 
 "keybind - cursormove
 noremap <C-j> }
