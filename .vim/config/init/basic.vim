@@ -8,9 +8,10 @@ set backspace=indent,eol,start
 set virtualedit+=onemore
 set ttimeoutlen=10
 set completeopt=menuone,noinsert
-set encoding=utf-8
+set encoding=UTF-8
 filetype plugin on
 set scrolloff=5
+set wildmenu
 
 "editor - display
 set cursorline

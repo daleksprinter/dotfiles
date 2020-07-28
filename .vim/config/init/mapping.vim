@@ -60,3 +60,5 @@ nnoremap <silent> [Tag]c :tablast <bar> tabnew<CR>
 nnoremap <silent> [Tag]x :tabclose<CR>
 nnoremap <silent> [Tag]n :tabnext<CR>
 nnoremap <silent> [Tag]p :tabprevious<CR>
+
+nnoremap <C-t> :<C-u>Vista coc<CR>
