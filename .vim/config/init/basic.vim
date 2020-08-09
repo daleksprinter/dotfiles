@@ -41,6 +41,8 @@ set noswapfile
 "editor - tab setting
 set tabstop=4
 set shiftwidth=4
+set autoindent
+set expandtab
 
 "ファイル開いた時に最後に編集した行に移動
 if has("autocmd")
