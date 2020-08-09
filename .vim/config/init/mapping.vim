@@ -69,4 +69,4 @@ nnoremap <silent> [Tag]x :tabclose<CR>
 nnoremap <silent> [Tag]n :tabnext<CR>
 nnoremap <silent> [Tag]p :tabprevious<CR>
 
-nnoremap <C-t> :<C-u>Vista coc<CR>
+nnoremap <C-t> :<C-u>Vista!!<CR>
