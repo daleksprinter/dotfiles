@@ -41,7 +41,7 @@ inoremap <C-k> <Esc>lc$
 "keybind - cursormove
 noremap <C-j> }
 noremap <C-k> {
-nnoremap j gj
+noremap j gj
 nnoremap k gk
 nnoremap <down> gj
 nnoremap <up> gk
