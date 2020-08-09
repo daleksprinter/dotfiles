@@ -1,5 +1,6 @@
 set -x GOPATH $HOME/go
 set -x PATH $PATH $GOPATH/bin
+set -x PATH $PATH ~/.nodebrew/current/bin/
 
 alias rm 'rmtrash'
 
