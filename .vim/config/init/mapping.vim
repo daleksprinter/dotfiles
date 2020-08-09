@@ -14,6 +14,11 @@ noremap f $l
 nnoremap J gT
 nnoremap K gt
 
+"disable original keybind
+nnoremap <C-f> <Nop>
+nnoremap <C-b> <Nop>
+
+
 "検索行が真ん中に来るようにする
 nmap n nzz 
 nnoremap N Nzzzv
