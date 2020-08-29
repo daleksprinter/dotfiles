@@ -38,5 +38,9 @@ function vimp
             #TODO: validate github repogitory
             sed -i 2a$row $file
         end
+    else if test $argv[1] = 'install'
+        vim -c 'PlugInstall | q | q'
+    else
+        echo $usage
     end
 end
