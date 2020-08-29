@@ -57,3 +57,10 @@ endif
 
 " 補完表示時のEnterで改行をしない
 inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
+
+autocmd FileType scala let b:coc_root_patterns = ['build.sbt']
+au BufRead,BufNewFile *.sbt set filetype=scala
+
+
+
+command! Pwd echo expand("%:p")
