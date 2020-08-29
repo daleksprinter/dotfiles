@@ -11,8 +11,8 @@ nnoremap Y y$
 noremap a ^
 noremap f $l
 
-nnoremap J gT
-nnoremap K gt
+" nnoremap J gT
+" nnoremap K gt
 
 "disable original keybind
 nnoremap <C-f> <Nop>
@@ -45,6 +45,8 @@ noremap j gj
 nnoremap k gk
 nnoremap <down> gj
 nnoremap <up> gk
+nnoremap K 10k
+nnoremap J 10j
 
 nmap <esc><esc> :nohlsearch<cr><esc>
 
@@ -69,12 +71,11 @@ nnoremap <silent> [Tag]x :tabclose<CR>
 nnoremap <silent> [Tag]n :tabnext<CR>
 nnoremap <silent> [Tag]p :tabprevious<CR>
 
+"plugins
 nnoremap <silent> [Tag]z :Goyo<CR>
-
 nnoremap <C-t> :<C-u>Vista!!<CR>
 
+"fzf
 map <Leader>f <Nop>
 nnoremap <Leader>f :<C-u>GFiles<CR> 
 nnoremap <Leader>b :<C-u>Buffers<CR>
-
-

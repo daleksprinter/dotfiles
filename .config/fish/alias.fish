@@ -25,6 +25,7 @@ alias gl='git log --pretty=format:"%C(yellow)%h%Creset %C(magenta)%ci%Creset%n%C
 alias glg='git log --graph --pretty=format:"%C(yellow)%h%Creset %C(magenta)%ci%Creset%n%C(cyan)%an <%ae>%Creset%n%B"'
 alias gm='git merge'
 alias gp='git push'
+alias gpo='git push origin'
 alias gr='git reset'
 alias gs='git status'
 alias gsh='git show'
