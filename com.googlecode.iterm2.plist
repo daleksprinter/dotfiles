@@ -14,6 +14,8 @@
 	<integer>1</integer>
 	<key>AppleWindowTabbingMode</key>
 	<string>manual</string>
+	<key>BootstrapDaemon</key>
+	<false/>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>Nord</key>
@@ -380,7 +382,7 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/ghq/github.com/daleksprinter/dotfiles</string>
+	<string>~/Desktop</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{799, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -427,9 +429,9 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 163 224 275 0 0 1792 1097 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>624 624 799 448 0 0 2048 1280 </string>
+	<string>196 216 799 448 0 0 2048 1280 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>896 495 890 602 0 0 2048 1280 </string>
+	<string>75 47 890 602 0 0 2048 1280 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>245 242 1350 855 0 0 1792 1097 </string>
 	<key>New Bookmarks</key>
@@ -744,7 +746,7 @@
 				<real>0.17621420323848724</real>
 			</dict>
 			<key>Cursor Type</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
@@ -1192,12 +1194,12 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {2048, 1280}}</string>
 		<key>topLeft</key>
-		<string>{269, 595}</string>
+		<string>{130, 742}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>7BE80555-DA26-44D3-88DF-540AF20BA78A</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>18</integer>
+	<integer>29</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>

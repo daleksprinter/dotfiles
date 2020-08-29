@@ -1,4 +1,10 @@
 call plug#begin()
+"added by vimp
+Plug 'amix/open_file_under_cursor.vim'
+Plug 'hoshinotsuyoshi/vim-to-github'
+Plug 'previm/previm'
+Plug 'junegunn/goyo.vim'
+
 "filer
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
@@ -33,7 +39,9 @@ Plug 'easymotion/vim-easymotion'
 "
 "theme
 Plug 'arcticicestudio/nord-vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'tomasr/molokai'
+
+
 
 " "language support
 " Plug 'prabirshrestha/async.vim'
@@ -42,10 +50,12 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'prabirshrestha/asyncomplete-lsp.vim'
 " Plug 'mattn/vim-lsp-settings'
 "
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'mattn/vim-goimports'
 Plug 'maxmellon/vim-jsx-pretty'
-
+Plug 'derekwyatt/vim-scala'
+Plug 'arnaud-lb/vim-php-namespace'
 
 " "javascript
 " Plug 'othree/yajs.vim'

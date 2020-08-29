@@ -55,7 +55,7 @@ nnoremap sl <C-w>l
 nnoremap sh <C-w>h
 nnoremap ss :<C-u>sp<CR><C-w>j
 nnoremap sv :<C-u>vs<CR><C-w>l
-nnoremap sz :call ToggleWindowSize()<CR>
+" nnoremap sz :call ToggleWindowSize()<CR>
 
 "tab move
 nnoremap    [Tag]   <Nop>

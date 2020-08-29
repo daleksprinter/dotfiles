@@ -1,0 +1,10 @@
+java.open.serverLog
+workspace.showOutput
+java.clean.workspace
+java.projectConfiguration.update
+java.updateLanguageServer
+metals.go-to-super-method
+metals.doctor-run
+metals.build-import
+metals.build-restart
+workspace.clearWatchman

@@ -21,6 +21,7 @@ SETUVAR fish_color_error:bf616a
 SETUVAR fish_color_escape:ebcb8b
 SETUVAR fish_color_history_current:\x2d\x2dbold
 SETUVAR fish_color_host:81a1c1
+SETUVAR fish_color_host_remote:yellow
 SETUVAR fish_color_match:88c0d0
 SETUVAR fish_color_normal:d8dee9
 SETUVAR fish_color_operator:81a1c1

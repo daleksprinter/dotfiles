@@ -1,3 +1,4 @@
 .vim/plugged
 .vim/undo/*
 .config/coc/extensions
+.config/gcloud
