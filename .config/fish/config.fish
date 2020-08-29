@@ -22,10 +22,16 @@ set -x GO111MODULE on
 set -x PATH $PATH /usr/local/opt/binutils/bin
 
 
-set -x PATH $PATH /Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/bin
-set -x JAVA_HOME /Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home
+# set -x PATH $PATH /Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/bin
+# set -x PATH /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/bin $PATH
 
+set -x JAVA_HOME  /Users/r-sekine/Library/Java/JavaVirtualMachines/adopt-openj9-1.8.0_265/Contents/Home
 
+# set -x JAVA_HOME /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
+set -x PATH $JAVA_HOME $PATH
+set -x PATH $PATH /usr/local/bin/metals-vim
+
+set -x PATH /usr/local/opt/gnu-sed/libexec/gnubin $PATH
 
 set nord0 2e3440
 set nord1 3b4252

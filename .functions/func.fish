@@ -45,6 +45,8 @@ function vimp
         vim -c 'PlugClean | q | q'
     else if test $argv[1] = 'list'
         cat $file | grep -v \" | grep -v call | sed  '/^$/d'
+    else if test $argv[1] = 'uninstall'
+        echo This command is not implemented yet.
     else
         echo $usage
     end
