@@ -20,11 +20,11 @@ nnoremap <C-b> <Nop>
 
 
 "検索行が真ん中に来るようにする
-nmap n nzz 
+nmap n nzz
 nnoremap N Nzzzv
-nmap * *zz 
-nmap # #zz 
-nmap g* g*zz 
+nmap * *zz
+nmap # #zz
+nmap g* g*zz
 nmap g# g#zz
 
 "keybind - emacs
