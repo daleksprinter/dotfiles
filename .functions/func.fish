@@ -26,3 +26,17 @@ function comp
 		g++ -std=gnu++1y $argv[1] -o $argv[2]
 	end
 end
+
+function vimp
+    set usage "Usage: vimp"
+    if test $argv[1] = 'add'
+        if test -z $argv[2]
+            echo $usage
+        else
+            set file {$HOME}/.vim/config/init/plugin.vim
+            set row "Plug \'$argv[2]\'"
+            #TODO: validate github repogitory
+            sed -i 2a$row $file
+        end
+    end
+end
