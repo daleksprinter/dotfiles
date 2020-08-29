@@ -27,19 +27,24 @@ function comp
 	end
 end
 
+#wrapper of vim-plug
 function vimp
     set usage "Usage: vimp"
+    set file {$HOME}/.vim/config/init/plugin.vim
     if test $argv[1] = 'add'
         if test -z $argv[2]
             echo $usage
         else
-            set file {$HOME}/.vim/config/init/plugin.vim
             set row "Plug \'$argv[2]\'"
             #TODO: validate github repogitory
             sed -i 2a$row $file
         end
     else if test $argv[1] = 'install'
         vim -c 'PlugInstall | q | q'
+    else if test $argv[1] = 'clean'
+        vim -c 'PlugClean | q | q'
+    else if test $argv[1] = 'list'
+        cat $file
     else
         echo $usage
     end
