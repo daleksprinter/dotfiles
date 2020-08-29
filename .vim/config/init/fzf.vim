@@ -16,5 +16,3 @@ nnoremap <silent> <Leader>s :call fzf#run({
 nnoremap <silent> <Leader>v :call fzf#run({
 \   'right': winwidth('.') / 2,
 \   'sink':  'vertical botright split' })<CR>
-
-
