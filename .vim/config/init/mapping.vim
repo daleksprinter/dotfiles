@@ -69,4 +69,12 @@ nnoremap <silent> [Tag]x :tabclose<CR>
 nnoremap <silent> [Tag]n :tabnext<CR>
 nnoremap <silent> [Tag]p :tabprevious<CR>
 
+nnoremap <silent> [Tag]z :Goyo<CR>
+
 nnoremap <C-t> :<C-u>Vista!!<CR>
+
+map <Leader>f <Nop>
+nnoremap <Leader>f :<C-u>GFiles<CR> 
+nnoremap <Leader>b :<C-u>Buffers<CR>
+
+
