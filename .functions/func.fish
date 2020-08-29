@@ -44,7 +44,7 @@ function vimp
     else if test $argv[1] = 'clean'
         vim -c 'PlugClean | q | q'
     else if test $argv[1] = 'list'
-        cat $file
+        cat $file | grep -v \" | grep -v call | sed  '/^$/d'
     else
         echo $usage
     end
