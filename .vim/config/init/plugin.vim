@@ -1,5 +1,6 @@
 call plug#begin()
 "added by vimp
+Plug 'sainnhe/edge'
 Plug 'gko/vim-coloresque'
 Plug 'amix/open_file_under_cursor.vim'
 Plug 'hoshinotsuyoshi/vim-to-github'

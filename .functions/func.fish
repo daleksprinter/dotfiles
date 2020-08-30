@@ -28,8 +28,8 @@ function comp
 end
 
 #wrapper of vim-plug
-function vimp
-    set usage "Usage: vimp"
+function vip
+    set usage "Usage: vip"
     set file {$HOME}/.vim/config/init/plugin.vim
     if test $argv[1] = 'add'
         if test -z $argv[2]
@@ -54,4 +54,12 @@ function vimp
         echo $usage
     end
     
+end
+
+function isRoman
+    if test (inputsource) = "com.apple.inputmethod.Kotoeri.Roman"
+        echo 'Roman'
+    else
+        echo 'Japanese'
+    end
 end

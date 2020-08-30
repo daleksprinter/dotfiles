@@ -16,6 +16,6 @@ let g:nerdtree_tabs_autoclose=1
 " Synchronize view of all NERDTree windows (scroll and cursor position)
 let g:nerdtree_tabs_synchronize_view=1
 " Synchronize focus when switching windows (focus NERDTree after tab switch if and only if it was focused before tab switch)
-let g:nerdtree_tabs_synchronize_focus=1
+" let g:nerdtree_tabs_synchronize_focus=1
 " When given a directory name as a command line parameter when launching Vim, :cd into it.
 let g:nerdtree_tabs_startup_cd=1
