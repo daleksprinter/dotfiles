@@ -1,5 +1,8 @@
 call plug#begin()
 "added by vimp
+Plug 'chr4/nginx.vim'
+Plug 'bronson/vim-trailing-whitespace'
+Plug 'skanehira/translate.vim'
 Plug 'sainnhe/edge'
 Plug 'gko/vim-coloresque'
 Plug 'amix/open_file_under_cursor.vim'
