@@ -12,6 +12,12 @@ set encoding=UTF-8
 filetype plugin on
 set scrolloff=5
 set wildmenu
+set hidden
+set nobackup
+set nowritebackup
+set cmdheight=2
+set updatetime=300
+set shortmess+=c
 
 "editor - display
 set cursorline
