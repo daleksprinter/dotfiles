@@ -19,3 +19,18 @@ let g:nerdtree_tabs_synchronize_view=1
 " let g:nerdtree_tabs_synchronize_focus=1
 " When given a directory name as a command line parameter when launching Vim, :cd into it.
 let g:nerdtree_tabs_startup_cd=1
+
+" Findしつつファイルをハイライトする
+function! NERDTreeFindAndHighlight()
+  NERDTreeFind
+  :setlocal isk+=.
+  normal! 0w
+  exe printf('match IncSearch /\<%s\>/', expand('<cword>'))
+  :setlocal isk-=.
+endfunction
+
+" 開いてるファイルをハイライトする
+function! NERDTreeHighlight()
+  :call NERDTreeFindAndHighlight()
+  :wincmd p
+endfunction

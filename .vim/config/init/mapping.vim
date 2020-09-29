@@ -39,14 +39,22 @@ inoremap <C-b> <left>
 inoremap <C-k> <Esc>lc$
 
 "keybind - cursormove
-noremap <C-j> }
-noremap <C-k> {
-noremap j gj
-nnoremap k gk
-nnoremap <down> gj
-nnoremap <up> gk
-nnoremap K 10k
-nnoremap J 10j
+noremap <C-j> }zz
+noremap <C-k> {zz
+" noremap j gjzz
+" nnoremap k gkzz
+
+nmap j <Plug>(accelerated_jk_gj)zz
+nmap k <Plug>(accelerated_jk_gk)zz
+nnoremap <down> gjzz
+nnoremap <up> gkzz
+nnoremap K 10kzz
+nnoremap J 10jzz
+vnoremap <S-k> 10<UP>zz
+vnoremap <S-j> 10<DOWN>zz
+nnoremap <C-o> <C-o>zz
+nnoremap <C-i> <C-i>zz
+
 
 nmap <esc><esc> :nohlsearch<cr><esc>
 
@@ -77,5 +85,11 @@ nnoremap <C-t> :<C-u>Vista!!<CR>
 
 "fzf
 map <Leader>f <Nop>
-nnoremap <Leader>f :<C-u>GFiles<CR> 
+nnoremap <Leader>f :<C-u>GFiles<CR>
 nnoremap <Leader>b :<C-u>Buffers<CR>
+
+"nerdtree
+nnoremap [nerd]   <Nop>
+nmap <Space>n [nerd]
+nnoremap <silent>[nerd]f :call NERDTreeFindAndHighlight()<CR>
+nnoremap <silent>[nerd]h :call NERDTreeHighlight()<CR>

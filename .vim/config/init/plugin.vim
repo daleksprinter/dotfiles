@@ -1,5 +1,8 @@
 call plug#begin()
 "added by vimp
+Plug 'rhysd/accelerated-jk'
+Plug 'Xuyuanp/scrollbar.nvim'
+Plug 'rking/ag.vim'
 Plug 'chr4/nginx.vim'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'skanehira/translate.vim'

@@ -3,6 +3,11 @@
     "%2FUsers%2Fr-sekine%2Fghq%2Fgithub": {
       "com%2Fdaleksprinter%2Fisucon7-qual-golang": [
         "docker"
+      ],
+      "com%2Fmatsuu%2Fvagrant-isucon%2Fisucon10-qualifier-standalone": [
+        "ruby",
+        "sorag",
+        "sora"
       ]
     }
   },
@@ -10,6 +15,9 @@
     "%2FUsers%2Fr-sekine%2Fghq%2Fgithub": {
       "com%2Fvoyagegroup%2Fzgok-ms%2Fadmin%2Fsrc%2FSazabi%2FMSBundle": [
         "1"
+      ],
+      "com%2Fdaleksprinter%2Fghq": [
+        " s"
       ]
     }
   },

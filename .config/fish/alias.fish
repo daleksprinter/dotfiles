@@ -37,6 +37,7 @@ alias glg='git log --graph --pretty=format:"%C(yellow)%h%Creset %C(magenta)%ci%C
 alias gm='git merge'
 alias gp='git push'
 alias gpo='git push origin'
+alias gp='git push origin HEAD'
 alias gr='git reset'
 alias grb='git rebase'
 alias grv='git revert'
