@@ -56,7 +56,7 @@ nnoremap <C-o> <C-o>zz
 nnoremap <C-i> <C-i>zz
 
 
-nmap <esc><esc> :nohlsearch<cr><esc>
+nnoremap <esc><esc> :noh<cr><esc>
 
 "keybind split, moving window
 nnoremap sj <C-w>j

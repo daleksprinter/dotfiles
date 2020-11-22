@@ -1,5 +1,6 @@
 call plug#begin()
 "added by vimp
+Plug 'jacoborus/tender.vim'
 Plug 'rhysd/accelerated-jk'
 Plug 'Xuyuanp/scrollbar.nvim'
 Plug 'rking/ag.vim'
