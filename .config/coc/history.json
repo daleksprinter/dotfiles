@@ -8,7 +8,19 @@
         "ruby",
         "sorag",
         "sora"
+      ],
+      "com%2Fvoyagegroup%2Fzgok-javascript%2Fframe-js-template": [
+        "html"
       ]
+    },
+    "%2FUsers%2Fr-sekine%2Fghq%2Fgit": {
+      "sv": {
+        "gnu": {
+          "org%2Fcoreutils": [
+            "clang"
+          ]
+        }
+      }
     }
   },
   "symbols": {
@@ -18,6 +30,9 @@
       ],
       "com%2Fdaleksprinter%2Fghq": [
         " s"
+      ],
+      "com%2Fvoyagegroup%2Fzgok-adserver": [
+        "jukondb"
       ]
     }
   },
@@ -25,7 +40,8 @@
     "%2FUsers%2Fr-sekine%2Fghq%2Fgithub": {
       "com%2Fvoyagegroup%2Fzgok-adserver": [
         "j",
-        "cannot be resolved"
+        "cannot be resolved",
+        " s"
       ]
     }
   },
@@ -36,6 +52,7 @@
         "java.",
         "java.confi",
         "java.open.ser",
+        "metals.tree",
         "metals."
       ],
       "com%2Fr-sekine%2Fjava": [
@@ -55,6 +72,9 @@
     "%2FUsers%2Fr-sekine%2Fghq%2Fgithub": {
       "com%2Fvoyagegroup%2Fzgok-ms": [
         "jj"
+      ],
+      "com%2Fvoyagegroup%2Fzgok-ksk": [
+        "p"
       ]
     }
   }

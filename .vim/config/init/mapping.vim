@@ -8,8 +8,8 @@ map <S-k> <Nop>
 
 nnoremap Y y$
 
-noremap a ^
-noremap f $l
+noremap H ^
+noremap L $l
 
 " nnoremap J gT
 " nnoremap K gt
@@ -23,7 +23,6 @@ nnoremap <C-b> <Nop>
 nmap n nzz
 nnoremap N Nzzzv
 nmap * *zz
-nmap # #zz
 nmap g* g*zz
 nmap g# g#zz
 
@@ -93,3 +92,10 @@ nnoremap [nerd]   <Nop>
 nmap <Space>n [nerd]
 nnoremap <silent>[nerd]f :call NERDTreeFindAndHighlight()<CR>
 nnoremap <silent>[nerd]h :call NERDTreeHighlight()<CR>
+
+let g:netrw_nogx = 1 " disable netrw's gx mapping.
+nmap gx <Plug>(openbrowser-smart-search)
+vmap gx <P(openbrowser-smart-search)
+
+nnoremap p "0p
+nnoremap # :%s/<C-r>///g<Left><Left>

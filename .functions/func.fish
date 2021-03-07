@@ -38,3 +38,7 @@ function vip
         echo $usage
     end
 end
+
+function aws
+    awsmfa -q; command aws $argv
+end

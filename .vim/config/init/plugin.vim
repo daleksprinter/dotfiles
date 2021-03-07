@@ -1,5 +1,7 @@
 call plug#begin()
 "added by vimp
+Plug 'https://github.com/universal-ctags/ctags.git'
+Plug 'tyru/open-browser.vim'
 Plug 'jacoborus/tender.vim'
 Plug 'rhysd/accelerated-jk'
 Plug 'Xuyuanp/scrollbar.nvim'

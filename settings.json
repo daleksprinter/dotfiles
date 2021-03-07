@@ -1,7 +1,7 @@
 {
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 2,
     "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Nord",
+    "workbench.colorTheme": "Default Light+",
     "go.formatTool": "goimports",
     "vim.hlsearch": true,
     "vim.useSystemClipboard": true,
