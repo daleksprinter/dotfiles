@@ -7,6 +7,7 @@ vim-plug:
 		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 vimrc:
+	rm $(HOME)/.vimrc
 	ln -sfv $(PWD)/.vimrc $(HOME)/.vimrc
 
 vim:
