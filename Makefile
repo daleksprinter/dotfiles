@@ -1,20 +1,20 @@
-all: vim .tmux.conf .config/fish
+all: vim tmux.conf config/fish
 
-vim: vim-plug .vimrc .vim
+vim: vim-plug vimrc vim
 
 vim-plug:
 	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-.vimrc:
+vimrc:
 	ln -sfv $(PWD)/.vimrc $(HOME)/.vimrc
 
-.vim:
+vim:
 	ln -sfnv $(PWD)/.vim $(HOME)/.vim
 
-.tmux.conf:
+tmux.conf:
 	ln -sfv $(PWD)/.tmux.conf $(HOME)/.tmux.conf
 
-.config/fish:
+config/fish:
 	mkdir -p $(HOME)/.config
 	ln -sfnv $(PWD)/.config/fish $(HOME)/.config/fish
