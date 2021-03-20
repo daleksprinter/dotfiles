@@ -14,11 +14,6 @@ noremap L $l
 " nnoremap J gT
 " nnoremap K gt
 
-"disable original keybind
-nnoremap <C-f> <Nop>
-nnoremap <C-b> <Nop>
-
-
 "検索行が真ん中に来るようにする
 nmap n nzz
 nnoremap N Nzzzv
@@ -47,8 +42,6 @@ nmap j <Plug>(accelerated_jk_gj)zz
 nmap k <Plug>(accelerated_jk_gk)zz
 nnoremap <down> gjzz
 nnoremap <up> gkzz
-nnoremap K 10kzz
-nnoremap J 10jzz
 vnoremap <S-k> 10<UP>zz
 vnoremap <S-j> 10<DOWN>zz
 nnoremap <C-o> <C-o>zz

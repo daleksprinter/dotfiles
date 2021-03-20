@@ -1,5 +1,5 @@
 #basic
-alias rm 'rmtrash'
+# alias rm 'rmtrash'
 alias ll 'ls -la'
 alias .. 'cd ../'
 alias ... 'cd ../../'

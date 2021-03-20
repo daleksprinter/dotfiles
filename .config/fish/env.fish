@@ -4,7 +4,7 @@ set -x GOPATH $HOME/go
 set -x PATH $PATH $GOPATH/bin
 
 
-phpenv init - | source
+# phpenv init - | source
 
 #Ruby
 rbenv init - | source

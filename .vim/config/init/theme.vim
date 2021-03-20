@@ -1,1 +1,1 @@
-colorscheme nord
+silent! colorscheme nord
