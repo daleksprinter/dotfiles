@@ -1,6 +1,6 @@
 all: vim tmux.conf config/fish
 
-vim: vim-plug vimrc vim
+vim-all: vim vim-plug vimrc
 
 vim-plug:
 	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
