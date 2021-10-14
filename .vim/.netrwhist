@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/Users/r-sekine/ghq/github.com/voyagegroup/sazabi-credentials/dev'
+let g:netrw_dirhist_6='/Users/r-sekine/ghq/github.com/voyagegroup/zgok-dlv-batch/lambda/touch_conversion_monitor/src/utils'
+let g:netrw_dirhist_5='/Users/r-sekine/ghq/github.com/voyagegroup/zgok-dlv-batch/lambda/touch_conversion_monitor/src/functions/untouched_record_age_monitor'
+let g:netrw_dirhist_4='/Users/r-sekine/ghq/github.com/voyagegroup/zgok-dlv-batch/lambda/touch_conversion_monitor/src/functions'
+let g:netrw_dirhist_3='/Users/r-sekine/ghq/github.com/voyagegroup/zgok-dlv-batch/lambda/touch_conversion_monitor/src'
+let g:netrw_dirhist_2='/Users/r-sekine/ghq/github.com/voyagegroup/skalin/go/cmd/appsflyer_log_mapper'
+let g:netrw_dirhist_1='/Users/r-sekine/ghq/github.com/voyagegroup/skalin/stacks/terraform/ksk-sandbox/ksk'

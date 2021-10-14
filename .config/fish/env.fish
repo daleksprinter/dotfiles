@@ -1,7 +1,6 @@
 #Golang
 set -x GO111MODULE on
 set -x GOPATH $HOME/go
-set -x PATH $PATH $GOPATH/bin
 
 
 # phpenv init - | source
@@ -9,25 +8,39 @@ set -x PATH $PATH $GOPATH/bin
 #Ruby
 rbenv init - | source
 
-# set -x PATH /usr/local/opt/php@7.2/bin $PATH
-set -x PATH $HOME/.rbenv/bin $PATH
-
-#Node.js
-set -x PATH $PATH ~/.nodebrew/current/bin/
 
 #Java
-set -x JAVA_HOME  /Users/r-sekine/Library/Java/JavaVirtualMachines/adopt-openj9-1.8.0_265/Contents/Home
-set -x PATH $JAVA_HOME $PATH
-
-#scala
-set -x PATH $PATH /usr/local/bin/metals-vim
+set -x JAVA_HOME  /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
 
 #other
+
+set -x MANPAGER "vim -M +MANPAGER -c 'set nolist' -"
+
+
+# function history
+#     builtin history --show-time='%Y/%m/%d %H:%M:%S ' | sort
+# end
+
+
+
+#PATH
+set -x PATH /usr/local/Cellar/dosfstools/4.2/sbin $PATH
+set -x PATH /usr/local/Cellar/llvm/11.1.0_1/bin $PATH
 set -x PATH /usr/local/opt/mysql-client/bin $PATH
 set -x PATH $PATH /usr/local/opt/binutils/bin
 set -x PATH /usr/local/opt/gnu-sed/libexec/gnubin $PATH
 set -x PATH /usr/local/bin $PATH
-
 set -x PATH ~/.phpenv/bin $PATH
+set -x PATH $JAVA_HOME $PATH
+#scala
+set -x PATH $PATH /usr/local/bin/metals-vim
 
-set -x MANPAGER "vim -M +MANPAGER -c 'set nolist' -"
+set -x PATH $PATH $GOPATH/bin
+# set -x PATH /usr/local/opt/php@7.2/bin $PATH
+set -x PATH $HOME/.rbenv/bin $PATH
+#Node.js
+set -x PATH $PATH ~/.nodebrew/current/bin/
+
+set -x PATH $PATH ~/bin
+set -x PATH $PATH /Users/r-sekine/Library/Application Support/Coursier/bin
+set -x PATH $PATH /Users/r-sekine/.pyenv/versions/3.6.13/bin

@@ -1,9 +1,15 @@
 call plug#begin()
 "added by vimp
+Plug 'nelsyeung/twig.vim'
+Plug 'mattn/vim-sqlfmt'
+Plug 'mattn/vim-goimports'
+Plug 'SirVer/ultisnips'
+Plug 'machakann/vim-highlightedyank'
+Plug 't9md/vim-textmanip'
 Plug 'rhysd/accelerated-jk'
 Plug 'rking/ag.vim'
 Plug 'bronson/vim-trailing-whitespace'
-Plug 'hoshinotsuyoshi/vim-to-github'
+Plug 'tonchis/vim-to-github'
 Plug 'junegunn/fzf', {'do': { -> fzf#install() }}
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
@@ -19,4 +25,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'tomasr/molokai'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'arnaud-lb/vim-php-namespace'
+Plug 'kshenoy/vim-signature'
+Plug 'kana/vim-fakeclip'
+Plug 'previm/previm'
 call plug#end()

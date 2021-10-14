@@ -15,9 +15,18 @@
             "initializationOptions": {
                 "storagePath": "/tmp/intelephense"
             }
+        },
+        "terraform": {
+            "command": "terraform-lsp",
+            "filetypes": [
+                "terraform",
+                "tf"
+            ],
+            "initializationOptions": {},
+            "settings": {}
         }
     },
-    "python.jediPath": "/Library/Python/3.7/site-packages",
-    "java.home": "/Library/Java/JavaVirtualMachines/openjdk-14.0.2.jdk/Contents/Home",
-    "clangd.path": "/Users/r-sekine/ghq/github.com/daleksprinter/dotfiles/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd"
+    "python.jediPath": "/usr/local/lib/python3.9/site-packages",
+    "java.home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home",
+    "clangd.path": "/Users/r-sekine/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd"
 }

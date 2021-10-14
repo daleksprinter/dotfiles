@@ -1,0 +1,10 @@
+snippet info "get logger service and info"
+$logger = $this->container->get('logger');
+$logger->info($1);
+endsnippet
+
+snippet isxml "isXmlHttpRequestCheck"
+if (!$request->isXmlHttpRequest()) {
+    return new JsonResponse('XmlHttpRequestではありません', 400);
+}
+endsnippet
