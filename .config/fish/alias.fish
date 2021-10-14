@@ -37,8 +37,9 @@ alias gs='git status'
 alias gsh='git show'
 
 #extend commands
-alias diff 'colordiff'
+alias diff='colordiff'
 alias date='gdate'
+alias rm='rip'
 
 #self scripted
 alias propen='gh pr view -w'
