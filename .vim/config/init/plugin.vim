@@ -1,5 +1,6 @@
 call plug#begin()
 "added by vimp
+Plug 'liuchengxu/vista.vim'
 Plug 'nelsyeung/twig.vim'
 Plug 'mattn/vim-sqlfmt'
 Plug 'mattn/vim-goimports'

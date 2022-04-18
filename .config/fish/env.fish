@@ -10,7 +10,8 @@ rbenv init - | source
 
 
 #Java
-set -x JAVA_HOME  /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
+set -x JAVA_HOME  /Library/Java/JavaVirtualMachines/openjdk-8.jdk/Contents/Home
+# set -x JAVA_HOME  /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
 
 #other
 
@@ -44,3 +45,5 @@ set -x PATH $PATH ~/.nodebrew/current/bin/
 set -x PATH $PATH ~/bin
 set -x PATH $PATH /Users/r-sekine/Library/Application Support/Coursier/bin
 set -x PATH $PATH /Users/r-sekine/.pyenv/versions/3.6.13/bin
+
+set -x AWS_DEFAULT_PROFILE zucks-zgok

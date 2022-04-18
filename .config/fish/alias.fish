@@ -60,4 +60,8 @@ alias gget='ghq get -l'
 #zgok
 alias killsh='ps a | grep zgok-sh | grep -v color | awk "{print $1}" | xargs kill -9'
 alias ssmzgokfzf='aws --profile zucks-zgok --region ap-northeast-1 ssm start-session --target (aws --profile zucks-zgok --region ap-northeast-1 ec2 describe-instances | jq -c '\''.Reservations[].Instances[] | select(.Tags[].Key == "Name") | {"Name": .Tags[].Value, "InstanceId": .InstanceId }'\'' | fzf | jq -r ".InstanceId")'
+alias ssmsazabifzf='aws --profile zucks-sazabi --region ap-northeast-1 ssm start-session --target (aws --profile zucks-sazabi --region ap-northeast-1 ec2 describe-instances | jq -c '\''.Reservations[].Instances[] | select(.Tags[].Key == "Name") | {"Name": .Tags[].Value, "InstanceId": .InstanceId }'\'' | fzf | jq -r ".InstanceId")'
 
+
+
+alias phpstorm='open -na "PhpStorm.app"'
