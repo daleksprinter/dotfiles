@@ -9,3 +9,8 @@ source $HOME/.config/fish/complete.fish
 if [ -f '/Users/r-sekine/google-cloud-sdk/path.fish.inc' ]; . '/Users/r-sekine/google-cloud-sdk/path.fish.inc'; end
 
 eval (scalaenv init - | source)
+
+bind \cy __tmux_session_fzf
+function __tmux_session_fzf
+    tmux ls | fzf | cut -d ':' -f 1 | xargs tmux switch -t
+end
