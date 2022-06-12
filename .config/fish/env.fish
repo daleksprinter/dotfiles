@@ -33,6 +33,7 @@ set -x PATH /usr/local/opt/gnu-sed/libexec/gnubin $PATH
 set -x PATH /usr/local/bin $PATH
 set -x PATH ~/.phpenv/bin $PATH
 set -x PATH $JAVA_HOME $PATH
+set -x PATH /Users/r-sekine/.cargo/bin $PATH 
 #scala
 set -x PATH $PATH /usr/local/bin/metals-vim
 
