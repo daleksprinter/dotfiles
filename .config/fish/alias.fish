@@ -1,8 +1,11 @@
 #basic
 # alias rm 'rmtrash'
 alias ll 'ls -la'
-alias .. 'cd ../'
-alias ... 'cd ../../'
+
+# cd alias
+alias desktop 'cd ~/Desktop'
+alias download 'cd ~/Downloads'
+alias work='cd ~/work && ls'
 
 #git
 alias g='git'
@@ -36,7 +39,7 @@ alias grv='git revert'
 alias gs='git status'
 alias gsh='git show'
 
-#extend commands
+#use alternative commands
 alias diff='colordiff'
 alias date='gdate'
 alias rm='rip'
@@ -44,7 +47,6 @@ alias rm='rip'
 #self scripted
 alias propen='gh pr view -w'
 alias cpdir='cp -rf'
-alias work='cd ~/work && ls'
 
 #shortcut
 alias q='exit'
@@ -59,7 +61,7 @@ alias gget='ghq get -l'
 
 #zgok
 alias killsh='ps a | grep zgok-sh | grep -v color | awk "{print $1}" | xargs kill -9'
-alias ssmzgokfzf='aws --profile zucks-zgok --region ap-northeast-1 ssm start-session --target (aws --profile zucks-zgok --region ap-northeast-1 ec2 describe-instances | jq -c '\''.Reservations[].Instances[] | select(.Tags[].Key == "Name") | {"Name": .Tags[].Value, "InstanceId": .InstanceId }'\'' | fzf | jq -r ".InstanceId")'
+alias ssmzgokfzf='aws --profile zucks-zgok --region ap-northeast-1 ssm start-session --target (aws --profile zucks-zgok --region ap-northeast-1 ec2 describe-instances | jq -c '\''.Reservations[].Instances[]  | select(.State.Code == 16) | select(.Tags[].Key == "Name") | {"Name": .Tags[].Value, "InstanceId": .InstanceId }'\'' | fzf | jq -r ".InstanceId")'
 alias ssmsazabifzf='aws --profile zucks-sazabi --region ap-northeast-1 ssm start-session --target (aws --profile zucks-sazabi --region ap-northeast-1 ec2 describe-instances | jq -c '\''.Reservations[].Instances[] | select(.Tags[].Key == "Name") | {"Name": .Tags[].Value, "InstanceId": .InstanceId }'\'' | fzf | jq -r ".InstanceId")'
 
 

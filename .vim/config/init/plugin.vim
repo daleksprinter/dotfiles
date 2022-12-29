@@ -1,5 +1,6 @@
 call plug#begin()
 "added by vimp
+Plug 'preservim/nerdtree'
 Plug 'liuchengxu/vista.vim'
 Plug 'nelsyeung/twig.vim'
 Plug 'mattn/vim-sqlfmt'
@@ -29,4 +30,5 @@ Plug 'arnaud-lb/vim-php-namespace'
 Plug 'kshenoy/vim-signature'
 Plug 'kana/vim-fakeclip'
 Plug 'previm/previm'
+Plug 'liuchengxu/vista.vim'
 call plug#end()

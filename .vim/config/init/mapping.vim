@@ -36,7 +36,6 @@ inoremap <C-f> <right>
 inoremap <C-b> <left>
 inoremap <C-k> <Esc>lc$
 
-nnoremap <C-w> diw
 nnoremap <C-h> hx
 nnoremap <C-d> x
 
@@ -86,3 +85,5 @@ nnoremap <Leader>b :<C-u>Buffers<CR>
 
 nnoremap p "+p
 nnoremap # :%s/<C-r>///g<Left><Left>
+
+
