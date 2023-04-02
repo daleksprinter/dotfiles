@@ -24,3 +24,5 @@ end
 
 set -x NVM_DIR ~/.nvm
 nvm use default --silent
+
+source /Users/r-sekine/.docker/init-fish.sh || true # Added by Docker Desktop

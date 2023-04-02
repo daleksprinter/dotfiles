@@ -10,5 +10,5 @@
 	email = ca01376@cartahd.com
 	name = r-sekine
 [credential]
-	helper = "!aws codecommit --profile zucks-zgok credential-helper "
+	helper = "!aws codecommit --profile zucks-zgok credential-helper $@"
 	UseHttpPath = true

@@ -45,9 +45,10 @@ set -x PATH $PATH ~/.nodebrew/current/bin/
 
 set -x PATH $PATH ~/bin
 set -x PATH $PATH /Users/r-sekine/Library/Application Support/Coursier/bin
-set -x PATH $PATH /Users/r-sekine/.pyenv/versions/3.6.13/bin
+set -x PATH $PATH /Users/r-sekine/.pyenv/versions
+pyenv init - | source
 
-set -x AWS_DEFAULT_PROFILE default
+set -x AWS_DEFAULT_PROFILE zucks-zgok
 
 set -x PATH $HOME/.phpenv/bin $PATH
 
