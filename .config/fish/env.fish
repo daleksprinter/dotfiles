@@ -1,9 +1,5 @@
 #Golang
-set -x GO111MODULE on
-set -x GOPATH $HOME/go
 
-
-# phpenv init - | source
 
 #Ruby
 rbenv init - | source
@@ -18,13 +14,17 @@ set -x JAVA_HOME  /Library/Java/JavaVirtualMachines/openjdk-8.jdk/Contents/Home
 set -x MANPAGER "vim -M +MANPAGER -c 'set nolist' -"
 
 
-# function history
-#     builtin history --show-time='%Y/%m/%d %H:%M:%S ' | sort
-# end
+# go
+set -x GO111MODULE on
+set -x GOPATH $HOME/go
+set -x GOENV_ROOT $HOME/.goenv
+set -x PATH $GOENV_ROOT/bin $PATH
+goenv init - | source
 
 
 
 #PATH
+
 set -x PATH /usr/local/Cellar/dosfstools/4.2/sbin $PATH
 set -x PATH /usr/local/Cellar/llvm/11.1.0_1/bin $PATH
 set -x PATH /usr/local/opt/mysql-client/bin $PATH
@@ -37,7 +37,6 @@ set -x PATH /Users/r-sekine/.cargo/bin $PATH
 #scala
 set -x PATH $PATH /usr/local/bin/metals-vim
 
-set -x PATH $PATH $GOPATH/bin
 # set -x PATH /usr/local/opt/php@7.2/bin $PATH
 set -x PATH $HOME/.rbenv/bin $PATH
 #Node.js

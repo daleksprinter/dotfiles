@@ -3,3 +3,4 @@
 .config/coc/extensions
 .config/gcloud
 .vim/sessions
+.idea
