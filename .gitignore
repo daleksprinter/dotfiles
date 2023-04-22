@@ -2,8 +2,8 @@
 !.vim/config
 !.vim/coc-settings.json
 
-.config/*
+.config/fish/*
 !.config/fish/config.fish
-!.config/fish/mycnf/*
+!.config/fish/mycnf
 
 .idea/*
