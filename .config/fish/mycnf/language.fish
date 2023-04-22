@@ -15,7 +15,7 @@ eval (pyenv init - | source)
 set -x PATH $HOME/.phpenv/bin $PATH
 eval (phpenv init - | source)
 
-# go
+#Go
 set -x GO111MODULE on
 set -x GOPATH $HOME/go
 set -x GOENV_ROOT $HOME/.goenv
