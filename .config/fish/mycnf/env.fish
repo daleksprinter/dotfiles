@@ -11,9 +11,6 @@ set -x JAVA_HOME  /Library/Java/JavaVirtualMachines/openjdk-8.jdk/Contents/Home
 
 #other
 
-set -x MANPAGER "vim -M +MANPAGER -c 'set nolist' -"
-
-
 # go
 set -x GO111MODULE on
 set -x GOPATH $HOME/go
