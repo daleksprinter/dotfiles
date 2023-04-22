@@ -1,7 +1,4 @@
 call plug#begin()
-"added by vimp
-Plug 'preservim/nerdtree'
-Plug 'liuchengxu/vista.vim'
 Plug 'nelsyeung/twig.vim'
 Plug 'mattn/vim-sqlfmt'
 Plug 'mattn/vim-goimports'
@@ -26,8 +23,5 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'tomasr/molokai'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'arnaud-lb/vim-php-namespace'
-Plug 'kshenoy/vim-signature'
 Plug 'kana/vim-fakeclip'
-Plug 'previm/previm'
-Plug 'liuchengxu/vista.vim'
 call plug#end()
