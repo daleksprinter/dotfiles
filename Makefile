@@ -19,6 +19,3 @@ tmux.conf:
 config/fish:
 	mkdir -p $(HOME)/.config
 	ln -sfnv $(PWD)/.config/fish $(HOME)/.config/fish
-
-func:
-	ln -sfv $(PWD)/.functions/func.fish $(HOME)/.functions/func.fish
