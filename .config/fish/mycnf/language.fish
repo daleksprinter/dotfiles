@@ -6,6 +6,10 @@ set -x PATH $HOME/.rbenv/bin $PATH
 eval (rbenv init - | source)
 
 #Node.js
+#@see https://eshlox.net/2019/01/27/how-to-use-nvm-with-fish-shell/
+function nvm
+    bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv
+end
 
 #Python
 set -x PATH $PATH /Users/r-sekine/.pyenv/versions
