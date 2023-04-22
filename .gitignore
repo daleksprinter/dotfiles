@@ -4,3 +4,4 @@
 .config/gcloud
 .vim/sessions
 .idea
+.vim/.netrwhist
