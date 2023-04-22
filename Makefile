@@ -22,5 +22,9 @@ config/fish:
 
 REPOS_FILE:=repos-$(shell date '+%Y%m%d')
 repo-dump:
-	rm repos-* | exit 0
 	ghq list > $(REPOS_FILE)
+
+INTELLIJ_PLUBIN_PATH:=~/Library/Application\ Support/JetBrains/IntelliJIdea2023.1/plugins
+PLUGINS_FILE:=intellij-plugins-$(shell date '+%Y%m%d')
+plugin-dump:
+	ls $(INTELLIJ_PLUBIN_PATH) > $(PLUGINS_FILE)
