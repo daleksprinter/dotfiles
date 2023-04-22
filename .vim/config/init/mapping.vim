@@ -1,8 +1,5 @@
 let mapleader = "\<Space>"
 
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 "keybind
 nnoremap O :<C-u>call append(expand('.'), '')<Cr>j
 
