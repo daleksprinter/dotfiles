@@ -1,7 +1,8 @@
 .vim/plugged
 .vim/undo/*
+.vim/.netrwhist
+.vim/sessions
+.vim/autoload
 .config/coc/extensions
 .config/gcloud
-.vim/sessions
 .idea
-.vim/.netrwhist
