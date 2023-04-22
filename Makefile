@@ -19,3 +19,8 @@ tmux.conf:
 config/fish:
 	mkdir -p $(HOME)/.config
 	ln -sfnv $(PWD)/.config/fish $(HOME)/.config/fish
+
+REPOS_FILE:=repos-$(shell date '+%Y%m%d')
+repo-dump:
+	rm repos-* | exit 0
+	ghq list > $(REPOS_FILE)
