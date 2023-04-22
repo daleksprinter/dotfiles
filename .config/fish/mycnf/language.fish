@@ -16,8 +16,7 @@ set -x PATH $PATH /Users/r-sekine/.pyenv/versions
 eval (pyenv init - | source)
 
 #PHP
-set -x PATH $HOME/.phpenv/bin $PATH
-eval (phpenv init - | source)
+#TODO https://github.com/daleksprinter/dotfiles/issues/8
 
 #Go
 set -x GO111MODULE on
