@@ -30,3 +30,6 @@ INTELLIJ_PLUGIN_PATH:=~/Library/Application\ Support/JetBrains/IntelliJIdea2023.
 PLUGINS_FILE:=intellij-plugins-$(shell date '+%Y%m%d')
 plugin-dump:
 	ls $(INTELLIJ_PLUGIN_PATH) > $(PLUGINS_FILE)
+
+brew:
+	/bin/bash -c "`curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh`"
