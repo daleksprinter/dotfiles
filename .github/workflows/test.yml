@@ -6,4 +6,5 @@ jobs:
     runs-on: macos-12
   steps:
     - uses: actions/checkout@v3
-    - run: echo "checkout"
+    - name: test
+      run: echo "checkout"
