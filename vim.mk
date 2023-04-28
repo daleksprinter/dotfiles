@@ -1,7 +1,15 @@
 FORCE:
 .PHONY: FORCE
 
-all: $(HOME)/.vimrc $(HOME)/.vim/config $(HOME)/.vim/coc-settings.json $(HOME)/.vim/autoload/plug.vim
+TARGETS := $(HOME)/.vimrc \
+			$(HOME)/.vim/config \
+			$(HOME)/.vim/coc-settings.json \
+			$(HOME)/.vim/autoload/plug.vim
+
+all: $(TARGETS)
+
+clean:
+	rm -rf $(TARGETS)
 
 $(HOME)/.vim: FORCE
 	mkdir -p $@
