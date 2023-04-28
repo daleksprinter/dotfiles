@@ -1,4 +1,4 @@
-all: vim tmux.conf config/fish
+all: tmux.conf config/fish
 
 tmux.conf:
 	ln -sfv $(PWD)/.tmux.conf $(HOME)/.tmux.conf
