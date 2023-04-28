@@ -1,20 +1,20 @@
-all:
-	$(MAKE) $(HOME)/.vimrc
-	$(MAKE) $(HOME)/.vim/config
-	$(MAKE) $(HOME)/.vim/autoload/plug.vim
+FORCE:
+.PHONY: FORCE
 
-$(HOME)/.vim:
-	mkdir $@
+all: $(HOME)/.vimrc $(HOME)/.vim/config $(HOME)/.vim/coc-settings.json $(HOME)/.vim/autoload/plug.vim
 
-$(HOME)/.vim/autoload/plug.vim: $(HOME)/.vim
+$(HOME)/.vim: FORCE
+	mkdir -p $@
+
+$(HOME)/.vim/autoload/plug.vim: $(HOME)/.vim FORCE
 	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-$(HOME)/.vim/config: $(HOME)/.vim .vim/config
+$(HOME)/.vim/config: .vim/config $(HOME)/.vim FORCE
 	cp -r $< $@
 
-$(HOME)/.vim/coc-settings.json: $(HOME)/.vim .vim/coc-settings.json
+$(HOME)/.vim/coc-settings.json: .vim/coc-settings.json $(HOME)/.vim FORCE
 	cp $< $@
 
-$(HOME)/.vimrc: .vimrc
+$(HOME)/.vimrc: .vimrc FORCE
 	cp $< $@
