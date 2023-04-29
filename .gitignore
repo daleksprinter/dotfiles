@@ -1,5 +1,1 @@
-.config/fish/*
-!.config/fish/config.fish
-!.config/fish/mycnf
-
 .idea
