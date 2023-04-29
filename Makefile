@@ -3,10 +3,10 @@ DUMP_TARGETS:=brew fisher git idea
 
 all:
 	@for target in $(TARGETS); do \
-		make -C $(target) all; \
+		make -C src/$(target) all; \
 	done
 
 dump:
 	@for target in $(DUMP_TARGETS); do \
-		make -C $(target) dump; \
+		make -C src/$(target) dump; \
 	done
