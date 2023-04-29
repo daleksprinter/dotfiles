@@ -2,6 +2,8 @@ SHELL=/usr/local/bin/fish
 DUMP_FILE:=dump
 PLUGINS:=$(shell cat $(DUMP_FILE))
 
+all: setup install
+
 setup:
 	curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 

@@ -1,4 +1,4 @@
-TARGETS:=fish brew git idea vim tmux
+TARGETS:=brew fish fisher git idea vim tmux
 
 all:
 	@for target in $(TARGETS); do \
