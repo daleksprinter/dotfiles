@@ -1,4 +1,5 @@
-.PHONY: install dump tap bundle
+FORCE:
+.PHONY: install dump tap bundle FORCE
 
 all: setup bundle
 
@@ -15,5 +16,5 @@ bundle: Brewfile
 
 dump: Brewfile
 
-Brewfile:
+Brewfile: FORCE
 	brew bundle dump --force
