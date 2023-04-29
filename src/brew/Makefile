@@ -1,8 +1,8 @@
 .PHONY: install dump tap bundle
 
-setup: install tap
-
 all: setup bundle
+
+setup: install tap
 
 install:
 	/bin/bash -c "`curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh`"
@@ -10,8 +10,8 @@ install:
 tap:
 	brew tap Homebrew/bundle
 
-bundle:
+bundle: Brewfile
 	brew bundle
 
-dump:
+Brewfile:
 	brew bundle dump --force

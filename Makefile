@@ -1,5 +1,6 @@
+TARGETS:=fish brew git idea vim tmux
+
 all:
-	$(MAKE) -f fish.mk all
-	$(MAKE) -f brew.mk all
-	$(MAKE) -f vim.mk all
-	$(MAKE) -f tmux.mk all
+	@for target in $(TARGETS); do \
+		make -C $(target) all; \
+	done
