@@ -13,5 +13,7 @@ tap:
 bundle: Brewfile
 	brew bundle
 
+dump: Brewfile
+
 Brewfile:
 	brew bundle dump --force
