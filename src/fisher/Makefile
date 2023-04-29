@@ -8,7 +8,7 @@ setup:
 dump:
 	fisher list > $(DUMP_FILE)
 
-install: $(DUMP_DIR)
+install:
 	for plugin in $(PLUGINS); \
 		fisher install $$plugin; \
 	end

@@ -1,19 +1,15 @@
-CONF_PATH=$(HOME)/.config/fish
-TARGETS:=$(CONF_PATH)/config.fish $(foreach conf, $(shell ls conf.d), $(CONF_PATH)/conf.d/$(conf))
+CONF_DIR=conf
+CONF_LIST:=$(foreach conf, $(shell find $(CONF_DIR) -type f | sed 's/^$(CONF_DIR)\///'), $(HOME)/$(conf))
+TARGETS:= $(CONF_LIST)
 
 all: $(TARGETS)
 
-$(HOME)/.config:
-	mkdir -p $@
-
-$(CONF_PATH): $(HOME)/.config
-	mkdir -p $@
-
-$(CONF_PATH)/config.fish: config.fish $(CONF_PATH)
-	cp $< $@
-
-$(CONF_PATH)/conf.d/%:
-	cp conf.d/$* $@
-
 clean:
 	rm $(TARGETS)
+
+list:
+	echo $(TARGETS)
+
+$(HOME)/%:
+	cp $(CONF_DIR)/$* $@
+

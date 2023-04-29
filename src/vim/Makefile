@@ -1,11 +1,14 @@
 CONF_DIR=conf
-TARGETS:=$(foreach conf, $(shell find $(CONF_DIR) -type f | sed 's/^$(CONF_DIR)\///'), $(HOME)/$(conf)) \
-			$(HOME)/.vim/autoload/plug.vim
+CONF_LIST:=$(foreach conf, $(shell find $(CONF_DIR) -type f | sed 's/^$(CONF_DIR)\///'), $(HOME)/$(conf))
+TARGETS:= $(CONF_LIST) $(HOME)/.vim/autoload/plug.vim
 
 all: $(TARGETS)
 
 clean:
 	rm $(TARGETS)
+
+list:
+	echo $(TARGETS)
 
 $(HOME)/%:
 	cp $(CONF_DIR)/$* $@
