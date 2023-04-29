@@ -3,7 +3,7 @@ FORCE:
 DUMP_FILE:=dump
 INTELLIJ_PLUGIN_PATH:=~/Library/Application\ Support/JetBrains/IntelliJIdea2023.1/plugins
 
-all: $(HOME)/.idevimrc
+all: $(HOME)/.ideavimrc
 
 clean:
 	rm -rf $(DUMP_FILE)

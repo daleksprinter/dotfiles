@@ -11,7 +11,7 @@
         "revision": "209f59cda890de69b74c224982591642c21323d3"
       },
       "homebrew/bundle": {
-        "revision": "6e051e032881029eb134cb5a00ada5a574c6817a"
+        "revision": "6b01bd338af95db59f1d6db87ebf6416d7518297"
       },
       "homebrew/cask": {
         "revision": "682a6911e397c2044ac501b8be12e3f5e36e4468"
@@ -20,13 +20,13 @@
         "revision": "ddb3f3e306c9d733c1367b8277b26948c28c9f0e"
       },
       "homebrew/cask-versions": {
-        "revision": "7e1ede89c53a18bf6fd2d765874cd4b9360cdc4b"
+        "revision": "8435bd4ae5877c1a26cb8fa5bdcb80be182ebc16"
       },
       "homebrew/core": {
         "revision": "a884a3c326b79df0497f13c90d99550523593169"
       },
       "aws/tap": {
-        "revision": "b85bb4e7550f07248ac7bfeeb25b87e1fb65c741"
+        "revision": "d7b188085a7fc5645d25fa849b69ecb2f711a4fe"
       },
       "hashicorp/tap": {
         "revision": "e48636ed8123191cd79c2a12f051745cedf59500"
