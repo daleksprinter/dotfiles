@@ -12,3 +12,6 @@ install:
 	for plugin in $(PLUGINS); \
 		fisher install $$plugin; \
 	end
+
+clean:
+	rm $(DUMP_FILE)
