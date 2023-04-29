@@ -6,4 +6,4 @@
 
 ## Usage
   - `make all`で環境構築
-  - `make -f dump.mk all`で環境のバックアップ(定期的にやろう)
+  - `make dump`で環境のバックアップ(定期的にやろう)

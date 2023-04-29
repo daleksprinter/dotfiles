@@ -2,7 +2,7 @@ FORCE:
 .PHONY: FORCE
 DUMP_FILE:=dump
 
-all: $(HOME)/.gitconfig
+all: $(HOME)/.gitconfig get
 
 $(HOME)/.gitconfig: .gitconfig FORCE
 	cp -f $< $@
