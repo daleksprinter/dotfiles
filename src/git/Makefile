@@ -11,7 +11,7 @@ dump:
 	ghq list > $(DUMP_FILE)
 
 get:
-	cat $(DUMP_FILE) | ghq get --parallel
+	cat $(DUMP_FILE) | ghq get -p --parallel
 
 clean:
 	rm $(DUMP_FILE)
