@@ -1,8 +1,0 @@
-[alias]
-	delete-merged-branch = "!f () { git checkout $1; git branch --merged|egrep -v '\\*|develop|main'|xargs git branch -d; };f"
-[user]
-	email = ca01376@cartahd.com
-	name = r-sekine
-[credential]
-	helper = "!aws codecommit --profile zucks-zgok credential-helper $@"
-	UseHttpPath = true
