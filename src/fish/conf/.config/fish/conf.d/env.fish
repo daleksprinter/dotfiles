@@ -8,3 +8,4 @@ set -x PATH /usr/local/opt/gnu-sed/libexec/gnubin $PATH
 
 set -x PATH /Users/r-sekine/.cargo/bin $PATH
 set -x PATH /Users/r-sekine/Library/Application Support/Coursier/bin $PATH
+set -x PATH /opt/homebrew/bin $PATH

@@ -1,3 +1,3 @@
-set shell=/usr/local/bin/fish
+set shell=/bin/sh
 set runtimepath+=~/.vim/
 runtime! config/*.vim

@@ -1,5 +1,5 @@
 DIST := $(HOME)
-CONFIG_PATH := $(PWD)/conf
+CONFIG_PATH := $(CURDIR)/conf
 
 .PHONY: all
 all: \
@@ -7,10 +7,11 @@ all: \
 	$(HOME)/.config/fish/conf.d/alias.fish \
 	$(HOME)/.config/fish/conf.d/env.fish \
 	$(HOME)/.config/fish/conf.d/language.fish \
-	$(HOME)/.config/fish/conf.d/theme.fish
+	$(HOME)/.config/fish/conf.d/theme.fish \
+	$(HOME)/.config/fish/functions/cd.fish
 
 $(DIST)/.config/fish/config.fish: $(CONFIG_PATH)/.config/fish/config.fish
-	mkdir -p $@
+	mkdir -p $(@D)
 	ln -sf $< $@
 
 $(DIST)/.config/fish/conf.d/alias.fish:  $(CONFIG_PATH)/.config/fish/conf.d/alias.fish
@@ -26,5 +27,9 @@ $(DIST)/.config/fish/conf.d/language.fish:  $(CONFIG_PATH)/.config/fish/conf.d/l
 	ln -sf $< $@
 
 $(DIST)/.config/fish/conf.d/theme.fish:  $(CONFIG_PATH)/.config/fish/conf.d/theme.fish
+	mkdir -p $(@D)
+	ln -sf $< $@
+
+$(DIST)/.config/fish/functions/cd.fish:  $(CONFIG_PATH)/.config/fish/functions/cd.fish
 	mkdir -p $(@D)
 	ln -sf $< $@
