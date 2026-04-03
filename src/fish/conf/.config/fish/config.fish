@@ -5,3 +5,6 @@ if test -f /Users/r-sekine/.docker/init-fish.sh; source /Users/r-sekine/.docker/
 
 # Added by Antigravity
 fish_add_path /Users/ryosekine/.antigravity/antigravity/bin
+
+test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish ; or true
+

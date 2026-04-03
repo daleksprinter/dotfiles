@@ -6,7 +6,8 @@ set -x PATH $HOME/.rbenv/bin $PATH
 eval (rbenv init - | source)
 
 #Node.js
-#@see https://eshlox.net/2019/01/27/how-to-use-nvm-with-fish-shell/
+set -gx NVM_DIR "$HOME/.nvm"
+fish_add_path "$NVM_DIR/versions/node/v24.5.0/bin"
 function nvm
     bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv
 end
