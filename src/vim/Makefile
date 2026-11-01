@@ -4,16 +4,19 @@ TARGETS:= $(CONF_LIST) $(HOME)/.vim/autoload/plug.vim
 
 all: $(TARGETS)
 
+FORCE:
+.PHONY: all clean list FORCE
+
 clean:
 	rm $(TARGETS)
 
 list:
 	echo $(TARGETS)
 
-$(HOME)/%:
-	cp $(CONF_DIR)/$* $@
+$(HOME)/%: FORCE
+	mkdir -p $(@D)
+	ln -sf $(CURDIR)/$(CONF_DIR)/$* $@
 
 $(HOME)/.vim/autoload/plug.vim:
 	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-

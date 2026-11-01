@@ -1,0 +1,2 @@
+# 2020 年にコミットした gh の OAuth トークン。失効済み（2026-11-01 に API で 401 を確認）
+5b9fa66a787731ddb284b9f1f84e4d55222e99e0:.config/gh/hosts.yml:generic-api-key:3

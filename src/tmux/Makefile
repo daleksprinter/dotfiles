@@ -1,7 +1,3 @@
-FORCE:
-.PHONY: FORCE
-
-all: $(HOME)/tmux.conf
-
-$(HOME)/tmux.conf: .tmux.conf FORCE
-	cp $< $@
+.PHONY: all
+all:
+	ln -sf $(CURDIR)/.tmux.conf $(HOME)/.tmux.conf
