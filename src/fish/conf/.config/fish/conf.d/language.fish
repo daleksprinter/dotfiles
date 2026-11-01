@@ -1,9 +1,6 @@
-#Scala
-eval (scalaenv init - | source)
-
 #Ruby
 set -x PATH $HOME/.rbenv/bin $PATH
-eval (rbenv init - | source)
+rbenv init - fish --no-rehash | source
 
 #Node.js
 set -gx NVM_DIR "$HOME/.nvm"
@@ -14,7 +11,7 @@ end
 
 #Python
 set -x PATH $PATH /Users/r-sekine/.pyenv/versions
-eval (pyenv init - | source)
+pyenv init - fish --no-rehash | source
 
 #PHP
 #TODO https://github.com/daleksprinter/dotfiles/issues/8
@@ -23,8 +20,7 @@ eval (pyenv init - | source)
 set -x GO111MODULE on
 set -x GOPATH $HOME/go
 set -x GOENV_ROOT $HOME/.goenv
-set -x PATH $GOENV_ROOT/bin $PATH
-eval (goenv init - | source)
+fish_add_path $GOENV_ROOT/versions/1.20.6/bin
 
 #Java
 set -x JAVA_HOME  /Library/Java/JavaVirtualMachines/openjdk-8.jdk/Contents/Home

@@ -8,3 +8,9 @@ fish_add_path /Users/ryosekine/.antigravity/antigravity/bin
 
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish ; or true
 
+
+# Claude Code (native install)
+fish_add_path /Users/ryosekine/.local/bin
+
+# Orca はワークツリーごとに fish_history を分けるので、iTerm と同じ共通履歴に戻す
+string match -q 'orca_*' -- $fish_history; and set -g fish_history fish

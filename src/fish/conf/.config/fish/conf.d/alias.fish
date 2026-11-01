@@ -15,6 +15,7 @@ alias gs='git status'
 #use alternative commands
 alias date='gdate'
 alias grep='ggrep'
+alias rm='/opt/homebrew/opt/macos-trash/bin/trash'
 
 #shortcut
 alias q='exit'
