@@ -1,2 +1,12 @@
 .idea
 .serena
+
+# 秘密情報になりがちなファイル
+.env
+.env.*
+*.pem
+*.key
+*.p12
+id_rsa*
+id_ed25519*
+credentials*.json
