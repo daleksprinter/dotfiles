@@ -10,6 +10,8 @@ all: \
 	$(HOME)/.config/fish/conf.d/language.fish \
 	$(HOME)/.config/fish/conf.d/theme.fish \
 	$(HOME)/.config/fish/functions/fzf_worktree.fish \
+	$(HOME)/.config/fish/functions/claude-add-dir.fish \
+	$(HOME)/.config/fish/fish_plugins \
 
 $(DIST)/.config/fish/config.fish: $(CONFIG_PATH)/.config/fish/config.fish
 	mkdir -p $(@D)
@@ -39,3 +41,10 @@ $(DIST)/.config/fish/functions/fzf_worktree.fish:  $(CONFIG_PATH)/.config/fish/f
 	mkdir -p $(@D)
 	ln -sf $< $@
 
+$(DIST)/.config/fish/functions/claude-add-dir.fish:  $(CONFIG_PATH)/.config/fish/functions/claude-add-dir.fish
+	mkdir -p $(@D)
+	ln -sf $< $@
+
+$(DIST)/.config/fish/fish_plugins:  $(CONFIG_PATH)/.config/fish/fish_plugins
+	mkdir -p $(@D)
+	ln -sf $< $@
